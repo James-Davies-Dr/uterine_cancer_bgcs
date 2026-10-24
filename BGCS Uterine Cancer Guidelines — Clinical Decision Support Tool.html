@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)file:///K:/chrome%20downloads/bgcs_uterine_cancer_clinical_decision_tool%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGCS Uterine Cancer Guidelines — Clinical Decision Support Tool</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="./BGCS Uterine Cancer Guidelines — Clinical Decision Support Tool_files/saved_resource"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./BGCS Uterine Cancer Guidelines — Clinical Decision Support Tool_files/css2" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="./BGCS Uterine Cancer Guidelines — Clinical Decision Support Tool_files/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            clinical: {
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#0f4c5c',
+              600: '#0d9488',
+              500: '#14b8a6',
+              50: '#f0fdfa',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    /* Custom Pill Button Transitions */
+    .pill-btn {
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .pill-btn-active {
+      background-color: #0f172a !important;
+      color: #ffffff !important;
+      border-color: #0f172a !important;
+      box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2), 0 2px 4px -2px rgba(15, 23, 42, 0.1);
+    }
+    .pill-btn-active .pill-sub {
+      color: #cbd5e1 !important;
+    }
+    .tab-btn-active {
+      background-color: #0d9488 !important;
+      color: #ffffff !important;
+      border-color: #0d9488 !important;
+      box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+    }
+    /* Smooth subtle scrollbars for summary box */
+    textarea::-webkit-scrollbar {
+      width: 6px;
+    }
+    textarea::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.z-30{z-index:30}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-2\.5{margin-bottom:0.625rem}.mb-3{margin-bottom:0.75rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.max-h-\[88vh\]{max-height:88vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-200 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(226 232 240 / var(--tw-divide-opacity, 1))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-4{border-bottom-width:4px}.border-t{border-top-width:1px}.border-amber-200\/80{border-color:rgb(253 230 138 / 0.8)}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-teal-400\/30{border-color:rgb(45 212 191 / 0.3)}.border-teal-400\/40{border-color:rgb(45 212 191 / 0.4)}.border-teal-500{--tw-border-opacity:1;border-color:rgb(20 184 166 / var(--tw-border-opacity, 1))}.border-teal-500\/30{border-color:rgb(20 184 166 / 0.3)}.border-teal-600{--tw-border-opacity:1;border-color:rgb(13 148 136 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-emerald-300{--tw-border-opacity:1;border-color:rgb(110 231 183 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-rose-300{--tw-border-opacity:1;border-color:rgb(253 164 175 / var(--tw-border-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-700{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/60{background-color:rgb(248 250 252 / 0.6)}.bg-slate-50\/70{background-color:rgb(248 250 252 / 0.7)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-teal-50{--tw-bg-opacity:1;background-color:rgb(240 253 250 / var(--tw-bg-opacity, 1))}.bg-teal-500\/20{background-color:rgb(20 184 166 / 0.2)}.bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/70{background-color:rgb(255 255 255 / 0.7)}.bg-emerald-50\/70{background-color:rgb(236 253 245 / 0.7)}.bg-rose-50\/70{background-color:rgb(255 241 242 / 0.7)}.bg-teal-900{--tw-bg-opacity:1;background-color:rgb(19 78 74 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-1\.5{padding:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-4{padding-bottom:1rem}.pt-1{padding-top:0.25rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-950{--tw-text-opacity:1;color:rgb(2 44 34 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-sky-700{--tw-text-opacity:1;color:rgb(3 105 161 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-teal-200{--tw-text-opacity:1;color:rgb(153 246 228 / var(--tw-text-opacity, 1))}.text-teal-300{--tw-text-opacity:1;color:rgb(94 234 212 / var(--tw-text-opacity, 1))}.text-teal-400{--tw-text-opacity:1;color:rgb(45 212 191 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-teal-700{--tw-text-opacity:1;color:rgb(15 118 110 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57 / var(--tw-text-opacity, 1))}.text-rose-900{--tw-text-opacity:1;color:rgb(136 19 55 / var(--tw-text-opacity, 1))}.text-rose-950{--tw-text-opacity:1;color:rgb(76 5 25 / var(--tw-text-opacity, 1))}.opacity-80{opacity:0.8}.opacity-85{opacity:0.85}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-slate-900{--tw-ring-opacity:1;--tw-ring-color:rgb(15 23 42 / var(--tw-ring-opacity, 1))}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-teal-600 *::selection{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-teal-600::selection{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-500:hover{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-teal-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(20 184 166 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:mt-0{margin-top:0px}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}.md\:self-center{align-self:center}}@media (min-width: 1024px){.lg\:sticky{position:sticky}.lg\:top-20{top:5rem}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-6{grid-column:span 6 / span 6}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="min-h-screen flex flex-col selection:bg-teal-600 selection:text-white">
+
+  <!-- TOP MEDICAL HEADER -->
+  <header class="bg-slate-900 text-white border-b-4 border-teal-500 shadow-lg sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div class="flex items-start sm:items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-teal-500/20 border border-teal-400/40 flex items-center justify-center text-teal-300 shrink-0 mt-0.5 sm:mt-0">
+            <i class="fa-solid fa-stethoscope text-xl"></i>
+          </div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-teal-500/20 text-teal-300 border border-teal-500/30">BGCS 2022 / ESGO 2020</span>
+              <span class="text-xs font-medium text-slate-400">FIGO 2018 Staging • NICE DG42</span>
+            </div>
+            <h1 class="text-lg sm:text-xl font-bold tracking-tight text-white mt-0.5">
+              Uterine Cancer Risk Stratification, Nodal &amp; Adjuvant Planner
+            </h1>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 self-start md:self-center">
+          <button onclick="resetAllState()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-rotate-left text-teal-400"></i>
+            <span>Reset Case</span>
+          </button>
+          <button onclick="openReferenceModal()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-600 hover:bg-teal-500 text-white transition flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-table-list"></i>
+            <span>Table 5 &amp; 6 Ref</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEALTHCARE PROFESSIONAL DISCLAIMER BANNER -->
+  <div class="bg-amber-50 border-b border-amber-200/80 text-amber-950 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-circle-exclamation text-amber-600 text-sm shrink-0"></i>
+        <p class="leading-relaxed">
+          <strong class="font-semibold">Clinical Decision Support Tool for Healthcare Professionals:</strong> Based on <em>Morrison J et al., British Gynaecological Cancer Society (BGCS) Uterine Cancer Guidelines (EJOG 2022;270:50–89)</em>. All cases must be discussed at a specialist gynaecological oncology MDT. Zero patient data is stored or transmitted.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- 3-TAB MODE SWITCHER -->
+    <nav class="grid grid-cols-1 md:grid-cols-3 gap-2.5 bg-white p-2 rounded-2xl shadow-sm border border-slate-200" aria-label="Clinical Workflow Tabs">
+      <button id="tab-btn-preop" onclick="switchTab('preop')" class="tab-btn-active flex items-center gap-3 px-4 py-3 rounded-xl text-left font-semibold text-sm border border-transparent transition">
+        <div class="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-user-doctor text-base"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-wider opacity-80 font-bold">Phase 1 • Clinic / Pre-Op MDT</div>
+          <div class="text-sm font-bold leading-snug">Pre-Op Surgical &amp; Nodal Planner</div>
+        </div>
+      </button>
+
+      <button id="tab-btn-postop" onclick="switchTab('postop')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-left font-semibold text-sm text-slate-700 hover:bg-slate-100 border border-transparent transition">
+        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-microscope text-base"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Phase 2 • Post-Op Histology</div>
+          <div class="text-sm font-bold leading-snug">ESGO/BGCS Risk &amp; Adjuvant Engine</div>
+        </div>
+      </button>
+
+      <button id="tab-btn-lynch" onclick="switchTab('lynch')" class="flex items-center gap-3 px-4 py-3 rounded-xl text-left font-semibold text-sm text-slate-700 hover:bg-slate-100 border border-transparent transition">
+        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-dna text-base"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Ancillary Pathways</div>
+          <div class="text-sm font-bold leading-snug">NICE DG42 Lynch &amp; Sarcoma Guide</div>
+        </div>
+      </button>
+    </nav>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 1: PRE-OPERATIVE SURGICAL & NODAL PLANNER                         -->
+    <!-- ===================================================================== -->
+    <section id="tab-panel-preop" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+        <!-- LEFT COLUMN: PRE-OP INPUTS (7 COLS) -->
+        <div class="lg:col-span-7 space-y-5">
+
+          <!-- Input Card 1: Biopsy Histology & Grade -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">1</span>
+                Biopsy Histological Subtype &amp; Grade
+              </label>
+              <span class="text-xs font-medium text-slate-400">WHO 2020 / Binary FIGO</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="preop-histology-group">
+              <button type="button" onclick="setPreopState('histology', 'endo_g1')" data-val="endo_g1" class="pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Endometrioid Grade 1</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Well differentiated (&lt;5% solid) • Low grade</div>
+              </button>
+              <button type="button" onclick="setPreopState('histology', 'endo_g2')" data-val="endo_g2" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Endometrioid Grade 2</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Moderately differentiated (6–50%) • Low grade</div>
+              </button>
+              <button type="button" onclick="setPreopState('histology', 'endo_g3')" data-val="endo_g3" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Endometrioid Grade 3</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Poorly differentiated (&gt;50% solid) • High grade</div>
+              </button>
+              <button type="button" onclick="setPreopState('histology', 'non_endo')" data-val="non_endo" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Non-Endometrioid High-Risk</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Serous, Clear Cell, Carcinosarcoma, Undiff, Mixed</div>
+              </button>
+              <button type="button" onclick="setPreopState('histology', 'aeh')" data-val="aeh" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Atypical Hyperplasia (AEH / EIN)</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Pre-malignant / ~30–40% occult G1 EC risk</div>
+              </button>
+              <button type="button" onclick="setPreopState('histology', 'sarcoma')" data-val="sarcoma" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Uterine Sarcoma</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">uLMS, LG-ESS, HG-ESS, UES, Adenosarcoma</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Input Card 2: Pre-op MRI / US Local Extent -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">2</span>
+                Pre-Operative MRI / Ultrasound Assessment of Extent
+              </label>
+              <span class="text-xs font-medium text-slate-400">Presumed FIGO 2018</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="preop-extent-group">
+              <button type="button" onclick="setPreopState('extent', 'no_inv')" data-val="no_inv" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">No Myometrial Invasion</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Confined to endometrium / polyp (Stage IA)</div>
+              </button>
+              <button type="button" onclick="setPreopState('extent', 'ia_lt50')" data-val="ia_lt50" class="pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">&lt;50% Myometrial Invasion</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Presumed FIGO Stage IA (Inner half)</div>
+              </button>
+              <button type="button" onclick="setPreopState('extent', 'ib_ge50')" data-val="ib_ge50" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">≥50% Myometrial Invasion</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Presumed FIGO Stage IB (Outer half)</div>
+              </button>
+              <button type="button" onclick="setPreopState('extent', 'stage_ii')" data-val="stage_ii" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Cervical Stromal Invasion</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Presumed Overt FIGO Stage II</div>
+              </button>
+              <button type="button" onclick="setPreopState('extent', 'stage_iii_iv')" data-val="stage_iii_iv" class="pill-btn sm:col-span-2 text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Extra-Uterine Spread (Presumed Stage III / IV)</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Serosal breach, adnexal mass, vaginal/parametrial, peritoneal or distant metastasis</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Input Card 3: Imaging Lymph Node Status -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">3</span>
+                Radiological Lymph Node Status (Pelvic / Para-Aortic)
+              </label>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="preop-nodes-group">
+              <button type="button" onclick="setPreopState('nodes', 'normal')" data-val="normal" class="pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Normal / Non-Bulky Nodes (cN0)</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">No suspicious lymphadenopathy on MRI/CT</div>
+              </button>
+              <button type="button" onclick="setPreopState('nodes', 'bulky')" data-val="bulky" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Bulky / Suspicious Nodes (cN1/N2)</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Pathologically enlarged pelvic or para-aortic nodes</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Input Card 4: Pre-Op Molecular / IHC Status -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">4</span>
+                Pre-Operative Biopsy Molecular / IHC Profile (If Known)
+              </label>
+              <span class="text-xs font-medium text-teal-700 bg-teal-50 px-2 py-0.5 rounded">Tests Unit/Centre Override</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="preop-mol-group">
+              <button type="button" onclick="setPreopState('mol', 'unknown')" data-val="unknown" class="pill-btn pill-btn-active text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Unknown</div>
+                <div class="pill-sub text-[11px] text-slate-500">Pending</div>
+              </button>
+              <button type="button" onclick="setPreopState('mol', 'nsmp')" data-val="nsmp" class="pill-btn text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">NSMP</div>
+                <div class="pill-sub text-[11px] text-slate-500">p53wt / MMRp</div>
+              </button>
+              <button type="button" onclick="setPreopState('mol', 'mmrd')" data-val="mmrd" class="pill-btn text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">MMRd</div>
+                <div class="pill-sub text-[11px] text-slate-500">MSI-High</div>
+              </button>
+              <button type="button" onclick="setPreopState('mol', 'pole')" data-val="pole" class="pill-btn text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">POLEmut</div>
+                <div class="pill-sub text-[11px] text-slate-500">Ultramutated</div>
+              </button>
+              <button type="button" onclick="setPreopState('mol', 'p53abn')" data-val="p53abn" class="pill-btn col-span-2 sm:col-span-1 text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">p53abn</div>
+                <div class="pill-sub text-[11px] text-slate-500">Mutant pattern</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Input Card 5: Patient Modifiers (Ovarian Conservation, Fertility, Frailty, Lynch) -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <label class="text-sm font-bold text-slate-900 flex items-center gap-2 mb-3">
+              <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">5</span>
+              Patient &amp; Clinical Modifiers (Select any that apply)
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-slate-100 cursor-pointer transition">
+                <input type="checkbox" id="mod-ovarian" onchange="updatePreopModifiers()" class="mt-1 w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500">
+                <div>
+                  <div class="text-xs font-bold text-slate-800">Pre-menopausal (&lt;50 yrs) — Ovarian Conservation?</div>
+                  <div class="text-[11px] text-slate-500">Evaluate eligibility for sparing ovaries at hysterectomy</div>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-slate-100 cursor-pointer transition">
+                <input type="checkbox" id="mod-fertility" onchange="updatePreopModifiers()" class="mt-1 w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500">
+                <div>
+                  <div class="text-xs font-bold text-slate-800">Wishes to Preserve Fertility (Uterine Sparing)</div>
+                  <div class="text-[11px] text-slate-500">Evaluate eligibility for hormonal / LNG-IUS management</div>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-slate-100 cursor-pointer transition">
+                <input type="checkbox" id="mod-unfit" onchange="updatePreopModifiers()" class="mt-1 w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500">
+                <div>
+                  <div class="text-xs font-bold text-slate-800">Medically Unfit for Standard Surgery / High Frailty</div>
+                  <div class="text-[11px] text-slate-500">Show non-surgical RT / progestin &amp; POPS pathways</div>
+                </div>
+              </label>
+
+              <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-slate-100 cursor-pointer transition">
+                <input type="checkbox" id="mod-lynch" onchange="updatePreopModifiers()" class="mt-1 w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500">
+                <div>
+                  <div class="text-xs font-bold text-slate-800">Known Lynch Syndrome / Strong Family History</div>
+                  <div class="text-[11px] text-slate-500">Impacts ovarian preservation &amp; germline cascade</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: PRE-OP LIVE OUTPUT CARDS (5 COLS) -->
+        <div class="lg:col-span-5 space-y-4 lg:sticky lg:top-20">
+
+          <!-- Output 1: Location of Surgery & Nodal Strategy Hero Banner -->
+          <div id="preop-hero-card" class="rounded-2xl shadow-md border-2 border-teal-600 bg-white overflow-hidden">
+            <div id="preop-hero-header" class="bg-teal-900 text-white px-5 py-4 flex items-center justify-between transition-colors">
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-teal-300">Primary Surgical Triage</div>
+                <h2 id="preop-location-title" class="text-lg font-extrabold tracking-tight mt-0.5">Gynaecological Cancer Diagnostic Unit</h2>
+              </div>
+              <span id="preop-location-grade" class="px-2.5 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-200 border border-teal-400/30">Grade D</span>
+            </div>
+
+            <div class="p-5 space-y-4">
+              <!-- Location Explanation -->
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Where to Operate (BGCS p.56)</div>
+                <p id="preop-location-desc" class="text-sm text-slate-700 leading-relaxed font-medium">Presumed FIGO Stage IA, Grade 1 or 2 endometrioid carcinoma with normal nodes may undergo surgery by a gynaecologist at a Diagnostic Cancer Unit who is a core member of an MDT (Grade D).</p>
+              </div>
+
+              <!-- Dynamic Molecular Alert Banner (POLEmut / p53abn) -->
+              <div id="preop-mol-alert" class="hidden rounded-xl p-3.5 text-xs leading-relaxed border"></div>
+
+              <hr class="border-slate-200">
+
+              <!-- Lymph Node Recommendation Box -->
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Lymph Node Management (BGCS p.59)</span>
+                  <span id="preop-node-grade" class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">Grade A</span>
+                </div>
+                <div id="preop-node-badge" class="p-3.5 rounded-xl font-bold text-sm flex items-start gap-3 border bg-emerald-50 border-emerald-300 text-emerald-950">
+                  <i id="preop-node-icon" class="fa-solid fa-shield-check text-emerald-600 text-lg mt-0.5 shrink-0"></i>
+                  <div>
+                    <div id="preop-node-headline" class="text-sm font-extrabold">No Lymphadenectomy Recommended</div>
+                    <div id="preop-node-subtext" class="text-xs font-normal mt-1 leading-relaxed">Lymphadenectomy of non-bulky nodes is not recommended in low-risk EC (Stage IA G1/G2; &lt;2cm nodal risk is ~1.4%) as it does not improve survival and significantly increases lymphoedema morbidity (Grade A).</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Staging Imaging Required -->
+              <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/80">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                    <i class="fa-solid fa-x-ray text-teal-600"></i>
+                    Pre-Op Staging Imaging (BGCS p.57)
+                  </span>
+                  <span class="text-[11px] font-semibold text-slate-500">Grade D</span>
+                </div>
+                <p id="preop-imaging-text" class="text-xs text-slate-700 leading-relaxed font-medium">Pelvic Ultrasound / MRI Pelvis (to assess myometrial depth) + Plain Chest X-Ray (CXR) alone. Routine pre-op CT of the pelvis/abdomen in low-grade Stage IA disease has very low yield and is NOT indicated (Grade D).</p>
+              </div>
+
+              <!-- Standard Surgical Procedure & Route -->
+              <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/80">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                    <i class="fa-solid fa-scalpel text-teal-600"></i>
+                    Hysterectomy Route &amp; Extent (BGCS p.58–60)
+                  </span>
+                  <span class="text-[11px] font-semibold text-slate-500">Grade A/B</span>
+                </div>
+                <p id="preop-surgery-text" class="text-xs text-slate-700 leading-relaxed">Total Hysterectomy + Bilateral Salpingo-Oophorectomy (BSO) without vaginal cuff or parametrectomy via Minimal Access Surgery (Laparoscopic or Robotic-assisted preferred over laparotomy, Grade A/B) within an Enhanced Recovery (ERAS) programme (Grade A).</p>
+              </div>
+
+              <!-- Dynamic Modifier Cards (Ovarian / Fertility / Unfit) -->
+              <div id="preop-modifiers-output" class="space-y-2.5"></div>
+            </div>
+          </div>
+
+          <!-- Pre-Op MDT Summary Copy Box -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                <i class="fa-solid fa-clipboard-check text-teal-600"></i>
+                Pre-Op MDT Outcome Summary
+              </span>
+              <button onclick="copySummary('preop-summary-text', 'preop-copy-btn')" id="preop-copy-btn" class="px-3 py-1.5 rounded-lg bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy MDT Text</span>
+              </button>
+            </div>
+            <textarea id="preop-summary-text" readonly="" rows="6" class="w-full text-xs font-mono bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-700 focus:outline-none"></textarea>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 2: POST-OPERATIVE ESGO/BGCS RISK & ADJUVANT CALCULATOR            -->
+    <!-- ===================================================================== -->
+    <section id="tab-panel-postop" class="hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+        <!-- LEFT COLUMN: POST-OP HISTOLOGY & MOLECULAR INPUTS (7 COLS) -->
+        <div class="lg:col-span-7 space-y-5">
+
+          <!-- Post-Op Input 1: Final Histology & Grade -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">1</span>
+                Final Hysterectomy Histology &amp; Binary Grade
+              </label>
+              <span class="text-xs font-medium text-slate-400">Table 5 &amp; Table 8</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="postop-hist-group">
+              <button type="button" onclick="setPostopState('hist', 'endo_low')" data-val="endo_low" class="pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Endometrioid Low-Grade (G1 / G2)</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Binary FIGO low-grade (≤50% solid growth)</div>
+              </button>
+              <button type="button" onclick="setPostopState('hist', 'endo_high')" data-val="endo_high" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Endometrioid High-Grade (G3)</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Binary FIGO high-grade (&gt;50% solid growth)</div>
+              </button>
+              <button type="button" onclick="setPostopState('hist', 'serous')" data-val="serous" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Serous Adenocarcinoma</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">High-grade non-endometrioid (PORTEC-3 subgroup)</div>
+              </button>
+              <button type="button" onclick="setPostopState('hist', 'clear_cell')" data-val="clear_cell" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Clear Cell Carcinoma</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">High-grade non-endometrioid subtype</div>
+              </button>
+              <button type="button" onclick="setPostopState('hist', 'carcinosarcoma')" data-val="carcinosarcoma" class="pill-btn sm:col-span-2 text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-sm">Carcinosarcoma / Undifferentiated / Mixed Carcinoma</div>
+                <div class="pill-sub text-xs text-slate-500 mt-0.5">Treated via high-grade epithelial endometrial carcinoma pathway (Table 5)</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Post-Op Input 2: Final FIGO 2018 Stage -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">2</span>
+                Final Surgical FIGO 2018 Stage (Table 6)
+              </label>
+              <span class="text-xs font-medium text-slate-400">Distinguishes No Invasion vs &lt;50%</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="postop-stage-group">
+              <button type="button" onclick="setPostopState('stage', 'IA_no_inv')" data-val="IA_no_inv" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IA (No Myometrial Invasion)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Confined to endometrium / polyp only</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IA_inv')" data-val="IA_inv" class="pill-btn pill-btn-active text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IA (&lt;50% Myoinvasion)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Myoinvasive &lt;50% (T1a N0 M0)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IB')" data-val="IB" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IB (≥50% Myoinvasion)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Outer half myometrium (T1b N0 M0)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'II')" data-val="II" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage II (Cervical Stroma)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Cervical stromal invasion (T2 N0 M0)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IIIA')" data-val="IIIA" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IIIA (Serosa / Adnexa)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Uterine serosa and/or adnexa (T3a)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IIIB')" data-val="IIIB" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IIIB (Vagina / Parametrium)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Vaginal or parametrial spread (T3b)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IIIC1')" data-val="IIIC1" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IIIC1 (Pelvic Nodes+)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Positive pelvic lymph nodes (N1/N1mi/N1a)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IIIC2')" data-val="IIIC2" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IIIC2 (Para-Aortic Nodes+)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Positive para-aortic nodes +/- pelvic (N2)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IVA')" data-val="IVA" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IVA (Bladder / Bowel Mucosa)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Invasion of bladder or bowel mucosa (T4)</div>
+              </button>
+              <button type="button" onclick="setPostopState('stage', 'IVB')" data-val="IVB" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Stage IVB (Distant / Peritoneal)</div>
+                <div class="pill-sub text-[11px] text-slate-500">Intra-abdominal, inguinal or distant (M1)</div>
+              </button>
+            </div>
+
+            <!-- Conditional Residual Disease Sub-Selector for Stage III - IVA -->
+            <div id="postop-residual-container" class="hidden mt-3 pt-3 border-t border-slate-200">
+              <label class="text-xs font-bold uppercase tracking-wider text-rose-700 block mb-2">
+                Stage III–IVA Cytoreduction Status (Table 5 Differentiator):
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="postop-residual-group">
+                <button type="button" onclick="setPostopState('residual', 'none')" data-val="none" class="pill-btn pill-btn-active text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50">
+                  <div class="font-bold text-xs">No Residual Disease (R0)</div>
+                  <div class="pill-sub text-[11px] text-slate-500">Complete macroscopic resection (High Risk group)</div>
+                </button>
+                <button type="button" onclick="setPostopState('residual', 'present')" data-val="present" class="pill-btn text-left p-2.5 rounded-xl border border-slate-200 bg-slate-50">
+                  <div class="font-bold text-xs">Residual Disease Present</div>
+                  <div class="pill-sub text-[11px] text-slate-500">Incomplete resection (Advanced Risk group)</div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post-Op Input 3: LVSI & Nodal Staging Performed -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- LVSI -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2 mb-2.5">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">3</span>
+                LVSI Status
+              </label>
+              <div class="space-y-2" id="postop-lvsi-group">
+                <button type="button" onclick="setPostopState('lvsi', 'neg_focal')" data-val="neg_focal" class="w-full pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                  <div class="font-bold text-sm">Negative or Focal LVSI</div>
+                  <div class="pill-sub text-xs text-slate-500">Absent or single/few vessels</div>
+                </button>
+                <button type="button" onclick="setPostopState('lvsi', 'substantial')" data-val="substantial" class="w-full pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                  <div class="font-bold text-sm">Substantial / Extensive LVSI</div>
+                  <div class="pill-sub text-xs text-slate-500">Multifocal / diffuse peritumoural LVSI</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Surgical Nodal Staging & Age -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 space-y-4">
+              <div>
+                <label class="text-sm font-bold text-slate-900 flex items-center gap-2 mb-2">
+                  <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">4</span>
+                  Surgical Nodal Staging Done?
+                </label>
+                <div class="grid grid-cols-2 gap-2" id="postop-nodal-staged-group">
+                  <button type="button" onclick="setPostopState('nodalStaged', 'yes')" data-val="yes" class="pill-btn pill-btn-active text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70">
+                    <div class="font-bold text-xs">Yes (SLNB/LND)</div>
+                    <div class="pill-sub text-[10px] text-slate-500">Pathologically staged</div>
+                  </button>
+                  <button type="button" onclick="setPostopState('nodalStaged', 'no')" data-val="no" class="pill-btn text-center p-2.5 rounded-xl border border-slate-200 bg-slate-50/70">
+                    <div class="font-bold text-xs">No (Unstaged)</div>
+                    <div class="pill-sub text-[10px] text-slate-500">Nodes not sampled</div>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-1.5">
+                  Patient Age Group (Intermediate Risk VBT modifier)
+                </label>
+                <div class="grid grid-cols-2 gap-2" id="postop-age-group">
+                  <button type="button" onclick="setPostopState('age', 'ge60')" data-val="ge60" class="pill-btn pill-btn-active text-center p-2 rounded-xl border border-slate-200 bg-slate-50/70 text-xs font-bold">
+                    ≥60 Years
+                  </button>
+                  <button type="button" onclick="setPostopState('age', 'lt60')" data-val="lt60" class="pill-btn text-center p-2 rounded-xl border border-slate-200 bg-slate-50/70 text-xs font-bold">
+                    &lt;60 Years
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post-Op Input 5: Molecular Classifier -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+            <div class="flex items-center justify-between mb-3">
+              <label class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center font-bold">5</span>
+                TCGA / Surrogate Molecular Subgroup (Table 4 &amp; Table 5)
+              </label>
+              <span class="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded">PORTEC-3 / ESGO 2020</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="postop-mol-group">
+              <button type="button" onclick="setPostopState('mol', 'unknown')" data-val="unknown" class="pill-btn pill-btn-active text-center p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">Unknown</div>
+                <div class="pill-sub text-[11px] text-slate-500">Morphology only</div>
+              </button>
+              <button type="button" onclick="setPostopState('mol', 'pole')" data-val="pole" class="pill-btn text-center p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">POLEmut</div>
+                <div class="pill-sub text-[11px] text-slate-500">Good prognosis</div>
+              </button>
+              <button type="button" onclick="setPostopState('mol', 'mmrd')" data-val="mmrd" class="pill-btn text-center p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">MMRd</div>
+                <div class="pill-sub text-[11px] text-slate-500">Intermediate</div>
+              </button>
+              <button type="button" onclick="setPostopState('mol', 'nsmp')" data-val="nsmp" class="pill-btn text-center p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">NSMP</div>
+                <div class="pill-sub text-[11px] text-slate-500">Copy-number low</div>
+              </button>
+              <button type="button" onclick="setPostopState('mol', 'p53abn')" data-val="p53abn" class="pill-btn col-span-2 sm:col-span-1 text-center p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100">
+                <div class="font-bold text-xs sm:text-sm">p53abn</div>
+                <div class="pill-sub text-[11px] text-slate-500">Poor prognosis</div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: POST-OP RISK & ADJUVANT OUTPUTS (5 COLS) -->
+        <div class="lg:col-span-5 space-y-4 lg:sticky lg:top-20">
+
+          <!-- Main Risk Group Hero Card -->
+          <div class="bg-white rounded-2xl shadow-md border-2 border-slate-800 overflow-hidden">
+            <div id="postop-risk-header" class="px-5 py-4 text-white bg-emerald-700 flex items-center justify-between transition-colors">
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider opacity-85">ESGO 2020 / BGCS 2022 Risk Group</div>
+                <h2 id="postop-risk-title" class="text-xl font-extrabold tracking-tight mt-0.5">LOW RISK</h2>
+              </div>
+              <span id="postop-risk-pill" class="px-3 py-1 rounded-full text-xs font-extrabold bg-white/20 backdrop-blur-sm">Table 5</span>
+            </div>
+
+            <div class="p-5 space-y-4">
+              <!-- Reason / Criteria Matched -->
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Stratification Basis</div>
+                <p id="postop-risk-basis" class="text-xs sm:text-sm font-semibold text-slate-800 leading-relaxed">Stage IA low-grade (G1/G2) endometrioid carcinoma with LVSI negative or focal (Table 5).</p>
+              </div>
+
+              <!-- Side-by-Side Molecular vs Unknown Comparator Strip -->
+              <div class="bg-slate-50 rounded-xl p-3 border border-slate-200">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2 flex items-center justify-between">
+                  <span>Molecular Impact Matrix (What-If Comparator)</span>
+                  <i class="fa-solid fa-code-compare text-teal-600"></i>
+                </div>
+                <div class="grid grid-cols-5 gap-1.5 text-center" id="postop-comparator-grid">
+          <div onclick="setPostopState('mol', 'unknown')" class="cursor-pointer p-1.5 rounded-lg border text-[10px] transition bg-emerald-50 text-emerald-800 border-emerald-300 ring-2 ring-slate-900 font-extrabold">
+            <div class="text-slate-600 font-semibold">Unknown</div>
+            <div class="font-extrabold mt-0.5">LOW</div>
+          </div>
+        
+          <div onclick="setPostopState('mol', 'pole')" class="cursor-pointer p-1.5 rounded-lg border text-[10px] transition bg-emerald-50 text-emerald-800 border-emerald-300 opacity-80 hover:opacity-100">
+            <div class="text-slate-600 font-semibold">POLEmut</div>
+            <div class="font-extrabold mt-0.5">LOW</div>
+          </div>
+        
+          <div onclick="setPostopState('mol', 'mmrd')" class="cursor-pointer p-1.5 rounded-lg border text-[10px] transition bg-emerald-50 text-emerald-800 border-emerald-300 opacity-80 hover:opacity-100">
+            <div class="text-slate-600 font-semibold">MMRd</div>
+            <div class="font-extrabold mt-0.5">LOW</div>
+          </div>
+        
+          <div onclick="setPostopState('mol', 'nsmp')" class="cursor-pointer p-1.5 rounded-lg border text-[10px] transition bg-emerald-50 text-emerald-800 border-emerald-300 opacity-80 hover:opacity-100">
+            <div class="text-slate-600 font-semibold">NSMP</div>
+            <div class="font-extrabold mt-0.5">LOW</div>
+          </div>
+        
+          <div onclick="setPostopState('mol', 'p53abn')" class="cursor-pointer p-1.5 rounded-lg border text-[10px] transition bg-rose-50 text-rose-900 border-rose-300 opacity-80 hover:opacity-100">
+            <div class="text-slate-600 font-semibold">p53abn</div>
+            <div class="font-extrabold mt-0.5">HIGH</div>
+          </div>
+        </div>
+                <p id="postop-shift-alert" class="hidden mt-2 text-[11px] font-semibold px-2.5 py-1.5 rounded-lg"></p>
+              </div>
+
+              <hr class="border-slate-200">
+
+              <!-- Adjuvant Radiotherapy Recommendation -->
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                    <i class="fa-solid fa-radiation text-amber-600"></i>
+                    Adjuvant Radiotherapy (VBT / EBRT)
+                  </span>
+                  <span id="postop-rt-grade" class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">Grade A</span>
+                </div>
+                <div id="postop-rt-box" class="p-3.5 rounded-xl border text-xs sm:text-sm space-y-1 bg-emerald-50/70 border-emerald-300">
+                  <div id="postop-rt-headline" class="font-extrabold text-slate-900">No Adjuvant Radiotherapy Recommended</div>
+                  <div id="postop-rt-details" class="text-xs text-slate-600 leading-relaxed">Multiple RCTs demonstrate no survival benefit for adjuvant radiotherapy in low-risk Stage IA G1/G2 endometrioid EC (Grade A).</div>
+                </div>
+              </div>
+
+              <!-- Adjuvant Chemotherapy Recommendation -->
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                    <i class="fa-solid fa-prescription-bottle-medical text-teal-600"></i>
+                    Adjuvant Systemic Chemotherapy (Sec 8.2)
+                  </span>
+                  <span id="postop-chemo-grade" class="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">Grade A</span>
+                </div>
+                <div id="postop-chemo-box" class="p-3.5 rounded-xl border text-xs sm:text-sm space-y-1 bg-emerald-50/70 border-emerald-300">
+                  <div id="postop-chemo-headline" class="font-extrabold text-slate-900">No Adjuvant Chemotherapy Indicated</div>
+                  <div id="postop-chemo-details" class="text-xs text-slate-600 leading-relaxed">Adjuvant cytotoxic chemotherapy is not recommended for Low, Intermediate, or node-negative LVSI-negative Stage I–II endometrioid carcinoma outside clinical trials.</div>
+                </div>
+              </div>
+
+              <!-- Follow-Up & PLFU Pathway (Table 13) -->
+              <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                    <i class="fa-solid fa-calendar-check text-teal-600"></i>
+                    Stratified Follow-Up Pathway (Table 13)
+                  </span>
+                  <span class="text-[11px] font-semibold text-slate-500">BGCS PLFU</span>
+                </div>
+                <p id="postop-fu-text" class="text-xs text-slate-700 leading-relaxed font-medium">Offer Patient-Led Follow-Up (PLFU) from completion of primary treatment following a Holistic Needs Assessment (HNA) at 3 months (&lt;10% risk of recurrence). If patient declines PLFU, offer clinic or telephone FU for max 2 years (Table 13).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post-Op MDT Summary Copy Box -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                <i class="fa-solid fa-clipboard-check text-teal-600"></i>
+                Post-Op MDT Outcome Summary
+              </span>
+              <button onclick="copySummary('postop-summary-text', 'postop-copy-btn')" id="postop-copy-btn" class="px-3 py-1.5 rounded-lg bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy MDT Text</span>
+              </button>
+            </div>
+            <textarea id="postop-summary-text" readonly="" rows="6" class="w-full text-xs font-mono bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-700 focus:outline-none"></textarea>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 3: NICE DG42 LYNCH SYNDROME & UTERINE SARCOMA PATHWAYS            -->
+    <!-- ===================================================================== -->
+    <section id="tab-panel-lynch" class="hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+        <!-- LEFT: NICE DG42 LYNCH SYNDROME INTERACTIVE CALCULATOR (6 COLS) -->
+        <div class="lg:col-span-6 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
+          <div class="flex items-start justify-between gap-3 border-b border-slate-100 pb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded">NICE DG42 • Table 3</span>
+              <h2 class="text-lg font-extrabold text-slate-900 mt-1">Universal Lynch Syndrome Screening Algorithm</h2>
+              <p class="text-xs text-slate-500 mt-0.5">All patients with endometrial cancer should be offered MMR testing (Grade C).</p>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-vial-circle-check text-lg"></i>
+            </div>
+          </div>
+
+          <!-- Step 1: 4-Panel MMR IHC Result -->
+          <div>
+            <label class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">
+              Step 1: Select 4-Panel MMR IHC Result (MLH1, MSH2, MSH6, PMS2)
+            </label>
+            <div class="space-y-2" id="lynch-ihc-group">
+              <button type="button" onclick="setLynchState('ihc', 'intact')" data-val="intact" class="w-full pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">All 4 MMR Proteins Intact (MMR Proficient / MMRp)</div>
+                <div class="pill-sub text-xs text-slate-500">Normal nuclear expression of MLH1, MSH2, MSH6, and PMS2</div>
+              </button>
+              <button type="button" onclick="setLynchState('ihc', 'mlh1')" data-val="mlh1" class="w-full pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">Loss of MLH1 (or combined MLH1 &amp; PMS2 loss)</div>
+                <div class="pill-sub text-xs text-slate-500">Requires reflex tumour MLH1 promoter hypermethylation testing</div>
+              </button>
+              <button type="button" onclick="setLynchState('ihc', 'msh2_msh6_pms2')" data-val="msh2_msh6_pms2" class="w-full pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">Loss of MSH2, MSH6, or Isolated PMS2</div>
+                <div class="pill-sub text-xs text-slate-500">High likelihood of Lynch Syndrome — proceed directly to germline testing</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Conditional Step 2: MLH1 Promoter Hypermethylation -->
+          <div id="lynch-meth-container" class="hidden pt-3 border-t border-slate-200">
+            <label class="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-2">
+              Step 2: MLH1 Promoter Hypermethylation Result (Tumour DNA)
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="lynch-meth-group">
+              <button type="button" onclick="setLynchState('meth', 'positive')" data-val="positive" class="pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50">
+                <div class="font-bold text-sm">Hypermethylation Detected (+)</div>
+                <div class="pill-sub text-xs text-slate-500">Sporadic epigenetic silencing</div>
+              </button>
+              <button type="button" onclick="setLynchState('meth', 'negative')" data-val="negative" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50">
+                <div class="font-bold text-sm">Hypermethylation NOT Detected (–)</div>
+                <div class="pill-sub text-xs text-slate-500">Suspected Lynch Syndrome</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Lynch Action Output Box -->
+          <div id="lynch-output-box" class="p-4 rounded-2xl border-2 bg-emerald-50 border-emerald-500 text-emerald-950 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-extrabold uppercase tracking-wider">NICE DG42 Recommended Action</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-white/70">Grade C</span>
+            </div>
+            <h3 id="lynch-output-title" class="text-base font-extrabold">No Further Lynch Tumour Testing Required (MMR Proficient)</h3>
+            <p id="lynch-output-desc" class="text-xs leading-relaxed">All four MMR proteins (MLH1, MSH2, MSH6, PMS2) are intact. Lynch syndrome is unlikely. However, if the patient has a strong family history of colorectal/endometrial/ovarian cancer or young age at diagnosis, consider Clinical Genetics referral.</p>
+          </div>
+
+          <!-- Risk-Reducing Hysterectomy & Surveillance Reference Box -->
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-600 flex items-center gap-1.5">
+              <i class="fa-solid fa-shield-heart text-teal-600"></i>
+              Lynch Syndrome Risk-Reducing Surgery Thresholds (BGCS p.53)
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center pt-1">
+              <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                <div class="text-xs font-extrabold text-slate-900">MLH1 / MSH2</div>
+                <div class="text-xs font-bold text-teal-700 mt-0.5">From Age 35</div>
+              </div>
+              <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                <div class="text-xs font-extrabold text-slate-900">MSH6</div>
+                <div class="text-xs font-bold text-teal-700 mt-0.5">From Age 40</div>
+              </div>
+              <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                <div class="text-xs font-extrabold text-slate-900">PMS2</div>
+                <div class="text-xs font-bold text-teal-700 mt-0.5">After Age 50</div>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-600 leading-relaxed pt-1">
+              • <strong>Oestrogen-only HRT</strong> is recommended after surgical menopause until at least natural menopause age (protective effect on colorectal cancer risk + bone/CV health).<br>
+              • <strong>Chemoprevention:</strong> Aspirin reduces cancer risk in Lynch syndrome (CAPP2 trial).
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: UTERINE SARCOMA DECISION PATHWAY (6 COLS) -->
+        <div class="lg:col-span-6 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
+          <div class="flex items-start justify-between gap-3 border-b border-slate-100 pb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded">Section 12 • Table 7 &amp; 11</span>
+              <h2 class="text-lg font-extrabold text-slate-900 mt-1">Uterine Sarcoma Management Pathway</h2>
+              <p class="text-xs text-slate-500 mt-0.5">Requires joint management with Regional Sarcoma MDT (Grade D).</p>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-diagram-project text-lg"></i>
+            </div>
+          </div>
+
+          <!-- Sarcoma Subtype Selector -->
+          <div>
+            <label class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">
+              Select Uterine Mesenchymal / Mixed Sarcoma Subtype (WHO 2020)
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="sarcoma-type-group">
+              <button type="button" onclick="setSarcomaState('ulms')" data-val="ulms" class="pill-btn pill-btn-active text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">Leiomyosarcoma (uLMS)</div>
+                <div class="pill-sub text-xs text-slate-500">Most common uterine sarcoma (35–40%)</div>
+              </button>
+              <button type="button" onclick="setSarcomaState('lg_ess')" data-val="lg_ess" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">Low-Grade ESS (LG-ESS)</div>
+                <div class="pill-sub text-xs text-slate-500">Indolent, ER/PR+, JAZF1-SUZ12</div>
+              </button>
+              <button type="button" onclick="setSarcomaState('hg_ess')" data-val="hg_ess" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">High-Grade ESS / Undiff (UES)</div>
+                <div class="pill-sub text-xs text-slate-500">Aggressive, YWHAE-FAM22 transcript</div>
+              </button>
+              <button type="button" onclick="setSarcomaState('adenosarcoma')" data-val="adenosarcoma" class="pill-btn text-left p-3 rounded-xl border border-slate-200 bg-slate-50/70">
+                <div class="font-bold text-sm">Uterine Adenosarcoma</div>
+                <div class="pill-sub text-xs text-slate-500">+/- Sarcomatous overgrowth (&gt;25%)</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sarcoma Output Details -->
+          <div id="sarcoma-output-card" class="space-y-3">
+        <div class="p-4 rounded-xl bg-rose-50/70 border border-rose-200 space-y-2.5 text-xs">
+          <div class="font-extrabold text-sm text-rose-950">Uterine Leiomyosarcoma (uLMS) — BGCS Section 12.1</div>
+          <div>
+            <span class="font-bold uppercase tracking-wider text-rose-800 block">Primary Surgery &amp; Nodal Rules:</span>
+            <p class="text-slate-700 leading-relaxed mt-0.5">Extrafascial Total Hysterectomy +/- Bilateral Salpingectomy (Grade D). Oophorectomy in young pre-menopausal women is NOT mandatory (2% ovarian metastasis rate; no OS impact, Grade D). Routine pelvic LND is NOT recommended (Grade D). Avoid morcellation (3-fold recurrence increase).</p>
+          </div>
+          <div>
+            <span class="font-bold uppercase tracking-wider text-rose-800 block">Adjuvant Therapy &amp; Contraindications:</span>
+            <p class="text-slate-700 leading-relaxed mt-0.5">Early Stage (I–II): Observation is standard of care (Grade B). Routine adjuvant RT (EORTC 55874) and adjuvant chemotherapy (GOG-277) do NOT improve survival (Grade B). Adjuvant RT only for selected high-risk cases (e.g., positive excision margins, Grade B). Stage III–IV R0: Adjuvant chemotherapy can be considered (Grade C).</p>
+          </div>
+          <div>
+            <span class="font-bold uppercase tracking-wider text-rose-800 block">Advanced / Recurrent Management:</span>
+            <p class="text-slate-700 leading-relaxed mt-0.5">First-line single-agent Doxorubicin (Grade B) OR Gemcitabine + Docetaxel (Grade C). Second-line: Trabectedin (ORR ~59.6%, Grade C). Low-volume indolent ER/PR+ uLMS: Consider aromatase inhibitors (letrozole/anastrozole, Grade D). Olaratumab or Bevacizumab combinations are NOT recommended (Grade B).</p>
+          </div>
+        </div>
+      </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================= -->
+  <!-- MODAL: TABLE 5 & TABLE 6 FULL GUIDELINE REFERENCE                       -->
+  <!-- ======================================================================= -->
+  <div id="reference-modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[88vh] flex flex-col shadow-2xl border border-slate-200 overflow-hidden">
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-bold">BGCS 2022 Guideline Reference Tables (Table 5 &amp; Table 6)</h3>
+          <p class="text-xs text-slate-400">ESGO-ESTRO-ESP 2020 Prognostic Risk Groups &amp; FIGO 2018 Endometrial Staging</p>
+        </div>
+        <button onclick="closeReferenceModal()" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-6 overflow-y-auto space-y-6 text-xs">
+        <div>
+          <h4 class="font-bold text-sm text-slate-900 mb-2">Table 5: Prognostic Risk Groups in Endometrial Cancer (Adapted from ESGO-ESTRO-ESP 2020)</h4>
+          <div class="overflow-x-auto border border-slate-200 rounded-xl">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                  <th class="p-3 font-bold">Risk Group</th>
+                  <th class="p-3 font-bold">Molecular Classification Unknown</th>
+                  <th class="p-3 font-bold">Molecular Classification Known</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr>
+                  <td class="p-3 font-bold text-emerald-700">Low</td>
+                  <td class="p-3">Stage IA endometrioid + low-grade (G1/G2) + LVSI negative or focal</td>
+                  <td class="p-3">• Stage I–II POLEmut endometrial carcinoma, no residual disease<br>• Stage IA MMRd/NSMP endometrioid + low-grade + LVSI negative or focal</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-sky-700">Intermediate</td>
+                  <td class="p-3">• Stage IB endometrioid + low-grade + LVSI negative or focal<br>• Stage IA endometrioid + high-grade (G3) + LVSI negative or focal<br>• Stage IA non-endometrioid without myometrial invasion</td>
+                  <td class="p-3">• Stage IB MMRd/NSMP endometrioid + low-grade + LVSI negative or focal<br>• Stage IA MMRd/NSMP endometrioid + high-grade + LVSI negative or focal<br>• Stage IA p53abn and/or non-endometrioid without myometrial invasion</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-amber-700">High-Intermediate</td>
+                  <td class="p-3">• Stage I endometrioid + substantial LVSI, regardless of grade and depth of invasion<br>• Stage IB endometrioid high-grade (G3), regardless of LVSI status<br>• Stage II endometrioid</td>
+                  <td class="p-3">• Stage I MMRd/NSMP endometrioid + substantial LVSI, regardless of grade and depth<br>• Stage IB MMRd/NSMP endometrioid high-grade (G3), regardless of LVSI<br>• Stage II MMRd/NSMP endometrioid</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-rose-700">High</td>
+                  <td class="p-3">• Stage III–IVA with no residual disease<br>• Stage I–IVA non-endometrioid with myometrial invasion, and with no residual disease</td>
+                  <td class="p-3">• Stage III–IVA MMRd/NSMP endometrioid with no residual disease<br>• Stage I–IVA p53abn endometrial carcinoma with myometrial invasion, with no residual disease<br>• Stage I–IVA NSMP/MMRd serous, undifferentiated, carcinosarcoma with myometrial invasion, with no residual disease</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-bold text-purple-800">Advanced / Metastatic</td>
+                  <td class="p-3">• Advanced: Stage III–IVA with residual disease<br>• Metastatic: Stage IVB</td>
+                  <td class="p-3">• Advanced: Stage III–IVA with residual disease of any molecular type<br>• Metastatic: Stage IVB of any molecular type</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 mt-12 py-5 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>
+        <strong>BGCS Uterine Cancer Clinical Decision Tool</strong> • Built from Morrison J et al., <em>Eur J Obstet Gynecol Reprod Biol</em> 2022;270:50–89.
+      </div>
+      <div class="text-slate-400">
+        Point-of-Care MDT Calculator • Client-Side Only
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================= -->
+  <!-- APPLICATION CLINICAL DECISION ENGINE (JAVASCRIPT)                       -->
+  <!-- ======================================================================= -->
+  <script>
+    // -------------------------------------------------------------------------
+    // APPLICATION STATE
+    // -------------------------------------------------------------------------
+    const defaultPreopState = {
+      histology: 'endo_g1',   // 'endo_g1', 'endo_g2', 'endo_g3', 'non_endo', 'aeh', 'sarcoma'
+      extent: 'ia_lt50',      // 'no_inv', 'ia_lt50', 'ib_ge50', 'stage_ii', 'stage_iii_iv'
+      nodes: 'normal',        // 'normal', 'bulky'
+      mol: 'unknown',         // 'unknown', 'nsmp', 'mmrd', 'pole', 'p53abn'
+      ovarian: false,
+      fertility: false,
+      unfit: false,
+      lynch: false
+    };
+
+    const defaultPostopState = {
+      hist: 'endo_low',       // 'endo_low', 'endo_high', 'serous', 'clear_cell', 'carcinosarcoma'
+      stage: 'IA_inv',        // 'IA_no_inv', 'IA_inv', 'IB', 'II', 'IIIA', 'IIIB', 'IIIC1', 'IIIC2', 'IVA', 'IVB'
+      residual: 'none',       // 'none', 'present'
+      lvsi: 'neg_focal',      // 'neg_focal', 'substantial'
+      nodalStaged: 'yes',     // 'yes', 'no'
+      mol: 'unknown',         // 'unknown', 'pole', 'mmrd', 'nsmp', 'p53abn'
+      age: 'ge60'             // 'ge60', 'lt60'
+    };
+
+    const defaultLynchState = {
+      ihc: 'intact',          // 'intact', 'mlh1', 'msh2_msh6_pms2'
+      meth: 'positive'        // 'positive', 'negative'
+    };
+
+    let preopState = { ...defaultPreopState };
+    let postopState = { ...defaultPostopState };
+    let lynchState = { ...defaultLynchState };
+    let sarcomaType = 'ulms';
+
+    // -------------------------------------------------------------------------
+    // TAB NAVIGATION
+    // -------------------------------------------------------------------------
+    function switchTab(tabId) {
+      const tabs = ['preop', 'postop', 'lynch'];
+      tabs.forEach(t => {
+        const panel = document.getElementById(`tab-panel-${t}`);
+        const btn = document.getElementById(`tab-btn-${t}`);
+        if (t === tabId) {
+          panel.classList.remove('hidden');
+          btn.classList.add('tab-btn-active');
+        } else {
+          panel.classList.add('hidden');
+          btn.classList.remove('tab-btn-active');
+        }
+      });
+    }
+
+    function openReferenceModal() {
+      document.getElementById('reference-modal').classList.remove('hidden');
+    }
+
+    function closeReferenceModal() {
+      document.getElementById('reference-modal').classList.add('hidden');
+    }
+
+    // Helper to update active pill buttons in a container
+    function highlightPills(containerId, activeVal) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      const buttons = container.querySelectorAll('button[data-val]');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-val') === activeVal) {
+          btn.classList.add('pill-btn-active');
+        } else {
+          btn.classList.remove('pill-btn-active');
+        }
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // TAB 1: PRE-OPERATIVE LOGIC ENGINE
+    // -------------------------------------------------------------------------
+    function setPreopState(key, val) {
+      preopState[key] = val;
+      const groupMap = {
+        histology: 'preop-histology-group',
+        extent: 'preop-extent-group',
+        nodes: 'preop-nodes-group',
+        mol: 'preop-mol-group'
+      };
+      highlightPills(groupMap[key], val);
+      evaluatePreop();
+    }
+
+    function updatePreopModifiers() {
+      preopState.ovarian = document.getElementById('mod-ovarian').checked;
+      preopState.fertility = document.getElementById('mod-fertility').checked;
+      preopState.unfit = document.getElementById('mod-unfit').checked;
+      preopState.lynch = document.getElementById('mod-lynch').checked;
+      evaluatePreop();
+    }
+
+    function evaluatePreop() {
+      const { histology, extent, nodes, mol, ovarian, fertility, unfit, lynch } = preopState;
+
+      const isLowGradeEndo = (histology === 'endo_g1' || histology === 'endo_g2');
+      const isHighGrade = (histology === 'endo_g3' || histology === 'non_endo');
+      const isPresumedIA = (extent === 'no_inv' || extent === 'ia_lt50');
+      const isDeepOrAdvanced = (extent === 'ib_ge50' || extent === 'stage_ii' || extent === 'stage_iii_iv');
+
+      // 1. Determine Surgical Location (Unit vs Centre)
+      let locationTitle = '';
+      let locationGrade = 'Grade D';
+      let locationDesc = '';
+      let headerBg = 'bg-slate-900';
+
+      if (histology === 'sarcoma') {
+        locationTitle = 'Specialist Cancer Centre & Sarcoma MDT';
+        locationDesc = 'Patients with suspected or confirmed uterine sarcoma require management with involvement of the regional Sarcoma MDT and surgery at a Specialist Centre (Grade D).';
+        headerBg = 'bg-rose-900';
+      } else if (histology === 'aeh') {
+        if (isDeepOrAdvanced || nodes === 'bulky') {
+          locationTitle = 'Specialist Gynaecological Cancer Centre';
+          locationDesc = 'Although biopsy shows Atypical Endometrial Hyperplasia, imaging features suggest invasion/extrinsic spread (~30–40% co-existent carcinoma). Discuss at central MDT and manage at Cancer Centre.';
+          headerBg = 'bg-amber-900';
+        } else {
+          locationTitle = 'Gynaecological Cancer Diagnostic Unit';
+          locationDesc = 'Patients with Atypical Endometrial Hyperplasia (AEH) benefit from discussion at the gynaecological oncology MDT (Grade D) and may undergo total hysterectomy + BSO (or pre-menopausal ovarian conservation) at a Diagnostic Unit.';
+          headerBg = 'bg-teal-900';
+        }
+      } else if (isLowGradeEndo && isPresumedIA && nodes === 'normal') {
+        locationTitle = 'Gynaecological Cancer Diagnostic Unit';
+        locationDesc = 'Presumed FIGO Stage IA, Grade 1 or 2 endometrioid carcinoma with normal nodes may undergo surgery by a gynaecologist at a Diagnostic Cancer Unit who is a core member of an MDT (Grade D).';
+        headerBg = 'bg-teal-900';
+      } else {
+        locationTitle = 'Specialist Gynaecological Cancer Centre';
+        locationDesc = 'Women with high-grade endometrial cancer (Endometrioid G3, Serous, Clear Cell, Carcinosarcoma), suspected FIGO Stage IB (≥50% myometrial invasion on MRI) or above, or bulky nodal disease MUST undergo surgery at a Cancer Centre by a subspecialty-trained surgeon (Grade D).';
+        headerBg = 'bg-slate-900';
+      }
+
+      const heroHeader = document.getElementById('preop-hero-header');
+      heroHeader.className = `${headerBg} text-white px-5 py-4 flex items-center justify-between transition-colors`;
+      document.getElementById('preop-location-title').textContent = locationTitle;
+      document.getElementById('preop-location-grade').textContent = locationGrade;
+      document.getElementById('preop-location-desc').textContent = locationDesc;
+
+      // 2. Molecular Override / Alert Banner in Pre-Op
+      const molAlertEl = document.getElementById('preop-mol-alert');
+      molAlertEl.classList.add('hidden');
+      let molSummaryNote = '';
+
+      if (mol === 'pole' && (isHighGrade || isDeepOrAdvanced) && histology !== 'sarcoma') {
+        molAlertEl.classList.remove('hidden');
+        molAlertEl.className = 'rounded-xl p-3.5 text-xs leading-relaxed border bg-amber-50 border-amber-300 text-amber-950';
+        molAlertEl.innerHTML = `<strong class="font-bold block mb-0.5"><i class="fa-solid fa-circle-info text-amber-600 mr-1"></i>Pre-Op POLEmut Governance Note:</strong> Under BGCS 2022 &amp; NHS Service Specifications, surgical location (Cancer Centre) and SLNB staging remain indicated for G3 or presumed &ge;Stage IB disease to pathologically confirm Stage I–II status. Once final pathology confirms Stage I–II <code>POLEmut</code> with no residual disease, the patient downstages to <strong>Low Risk</strong> and requires no adjuvant therapy (Grade C).`;
+        molSummaryNote = 'Pre-op POLEmut noted: Cancer Centre surgery & SLNB still advised to confirm Stage I-II status; if Stage I-II R0 confirmed post-op, downstages to Low Risk (no adjuvant therapy).';
+      } else if (mol === 'p53abn' && isLowGradeEndo && isPresumedIA && histology !== 'sarcoma') {
+        molAlertEl.classList.remove('hidden');
+        molAlertEl.className = 'rounded-xl p-3.5 text-xs leading-relaxed border bg-rose-50 border-rose-300 text-rose-950';
+        molAlertEl.innerHTML = `<strong class="font-bold block mb-0.5"><i class="fa-solid fa-triangle-exclamation text-rose-600 mr-1"></i>Pre-Op p53abn Upstaging Alert:</strong> While presumed Stage IA G1/G2 endometrioid is morphologically eligible for Unit surgery, any myoinvasive <code>p53abn</code> endometrial carcinoma is classified as <strong>High Risk</strong> (Table 5). Strongly consider <strong>Cancer Centre referral &amp; Sentinel Lymph Node Biopsy (SLNB)</strong> at MDT.`;
+        molSummaryNote = 'ALERT: Pre-op p53abn detected on low-grade biopsy. If myoinvasive, classifies as High Risk (Table 5) — consider Cancer Centre surgery + SLNB.';
+      }
+
+      // 3. Lymph Node & Surgical Staging Recommendation
+      let nodeGrade = 'Grade A';
+      let nodeHeadline = '';
+      let nodeSubtext = '';
+      let nodeBadgeStyle = '';
+      let nodeIcon = '';
+
+      if (histology === 'sarcoma') {
+        nodeGrade = 'Grade C/D';
+        nodeHeadline = 'No Routine Lymphadenectomy Indicated';
+        nodeSubtext = 'Systematic pelvic/para-aortic lymphadenectomy is not indicated for staging uterine sarcomas (incidence of nodal spread is low and LND confers no survival benefit). Debulk enlarged nodes only if part of complete macroscopic cytoreduction.';
+        nodeBadgeStyle = 'bg-slate-100 border-slate-300 text-slate-900';
+        nodeIcon = 'fa-solid fa-ban text-slate-600';
+      } else if (histology === 'aeh') {
+        nodeGrade = 'Grade D';
+        nodeHeadline = 'No Lymphadenectomy Recommended';
+        nodeSubtext = 'Routine lymph node sampling or systematic dissection is not indicated for Atypical Endometrial Hyperplasia.';
+        nodeBadgeStyle = 'bg-emerald-50 border-emerald-300 text-emerald-950';
+        nodeIcon = 'fa-solid fa-check-circle text-emerald-600';
+      } else if (nodes === 'bulky') {
+        nodeGrade = 'Grade D';
+        nodeHeadline = 'Surgical Debulking of Bulky Nodes (If Resectable)';
+        nodeSubtext = 'Macroscopic resection of bulky nodal disease improves survival (Grade D). Routine systematic LND of non-suspicious nodes is NOT recommended (Grade D). Note: Bulky nodes, LVSI, and non-endometrioid histology are independent predictors of SLNB mapping failure (SENTIFAIL study).';
+        nodeBadgeStyle = 'bg-rose-50 border-rose-300 text-rose-950';
+        nodeIcon = 'fa-solid fa-scissors text-rose-600';
+      } else if (isLowGradeEndo && isPresumedIA && mol !== 'p53abn') {
+        nodeGrade = 'Grade A';
+        nodeHeadline = 'No Lymphadenectomy Recommended';
+        nodeSubtext = 'Lymphadenectomy of non-bulky nodes is not recommended in low-risk EC (Stage IA G1/G2; <2cm nodal risk is ~1.4%) as it does not improve survival and significantly increases lymphoedema morbidity (Grade A).';
+        nodeBadgeStyle = 'bg-emerald-50 border-emerald-300 text-emerald-950';
+        nodeIcon = 'fa-solid fa-shield-check text-emerald-600';
+      } else {
+        nodeGrade = 'Grade B/C';
+        nodeHeadline = 'Sentinel Lymph Node Biopsy (SLNB) +/- Omental Biopsy';
+        nodeSubtext = 'SLNB (ICG cervical injection + ultrastaging) has high diagnostic accuracy (NPV >99% in FIRES/SHREC) and should replace systematic lymphadenectomy of non-bulky nodes for staging (Grade B). Consider omental biopsy in serous/non-endometrioid/greater than low-risk disease (Grade C). Recruit to clinical trials where available (Grade C).';
+        nodeBadgeStyle = 'bg-amber-50 border-amber-400 text-amber-950';
+        nodeIcon = 'fa-solid fa-crosshairs text-amber-600';
+      }
+
+      document.getElementById('preop-node-grade').textContent = nodeGrade;
+      document.getElementById('preop-node-headline').textContent = nodeHeadline;
+      document.getElementById('preop-node-subtext').textContent = nodeSubtext;
+      document.getElementById('preop-node-badge').className = `p-3.5 rounded-xl font-bold text-sm flex items-start gap-3 border ${nodeBadgeStyle}`;
+      document.getElementById('preop-node-icon').className = `${nodeIcon} text-lg mt-0.5 shrink-0`;
+
+      // 4. Pre-Operative Staging Imaging
+      let imagingText = '';
+      if (fertility) {
+        imagingText = 'MRI Abdomen & Pelvis is mandatory to exclude myometrial invasion, adnexal pathology, and establish a baseline for conservative progestin therapy (Grade D).';
+      } else if (histology === 'sarcoma' || isHighGrade || isDeepOrAdvanced || nodes === 'bulky' || mol === 'p53abn') {
+        imagingText = 'CT Chest, Abdomen & Pelvis (+ Pelvic MRI if local staging alters surgical approach) is recommended pre-operatively for high-grade histology, deep myometrial invasion (≥50%), or locally advanced disease (Grade D). FDG-PET-CT is not routinely indicated for primary staging.';
+      } else {
+        imagingText = 'Pelvic Ultrasound / MRI Pelvis (to assess myometrial depth) + Plain Chest X-Ray (CXR) alone. Routine pre-op CT of the pelvis/abdomen in low-grade Stage IA disease has very low yield and is NOT indicated (Grade D).';
+      }
+      document.getElementById('preop-imaging-text').textContent = imagingText;
+
+      // 5. Hysterectomy Route & Extent
+      let surgeryText = '';
+      if (histology === 'sarcoma') {
+        surgeryText = 'Extrafascial Total Hysterectomy +/- BSO without morcellation (Grade C/D). Power morcellation of fibroids/uterus is contraindicated (dramatically increases intra-abdominal recurrence and mortality).';
+      } else if (extent === 'stage_iii_iv') {
+        surgeryText = 'In Stage III/IV EC, consider primary surgical debulking (including bulky nodes) if complete macroscopic cytoreduction (R0) is feasible and morbidity acceptable, OR consider Neoadjuvant Chemotherapy (NACT with Carboplatin-Paclitaxel) + Interval Debulking Surgery (IDS) if primary R0 is unlikely (Grade D).';
+      } else if (extent === 'stage_ii') {
+        surgeryText = 'In overt Stage II EC, simple Total Hysterectomy + BSO via minimal access surgery (Laparoscopic / Robotic) is adequate. Radical hysterectomy should ONLY be considered if required to obtain macroscopic tumour-free margins (Grade B).';
+      } else {
+        surgeryText = 'Total Hysterectomy + Bilateral Salpingo-Oophorectomy (BSO) without vaginal cuff or parametrectomy via Minimal Access Surgery (Laparoscopic or Robotic-assisted preferred over laparotomy, Grade A/B) within an Enhanced Recovery (ERAS) programme (Grade A).';
+      }
+      document.getElementById('preop-surgery-text').textContent = surgeryText;
+
+      // 6. Modifiers Evaluation (Ovarian Conservation, Fertility, Unfit, Lynch)
+      const modContainer = document.getElementById('preop-modifiers-output');
+      modContainer.innerHTML = '';
+      let modSummaryLines = [];
+
+      // Ovarian Conservation Check
+      if (ovarian) {
+        const eligibleOvarianEC = (histology === 'endo_g1' && isPresumedIA && nodes === 'normal' && !lynch && mol !== 'p53abn');
+        const eligibleOvarianSarcoma = (histology === 'sarcoma' && isPresumedIA && !lynch);
+        let ovHtml = '';
+        if (eligibleOvarianEC || histology === 'aeh') {
+          ovHtml = `
+            <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-950 text-xs">
+              <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-emerald-600"></i>Ovarian Conservation: ELIGIBLE (Grade D)</div>
+              <p class="mt-1 leading-relaxed">Pre-menopausal patients with Grade 1 endometrioid EC (or AEH), &lt;50% myometrial invasion, no extra-uterine disease on imaging, and no Lynch syndrome may undergo Hysterectomy + Bilateral Salpingectomy with ovarian conservation without adverse impact on recurrence-free survival.</p>
+            </div>`;
+          modSummaryLines.push('Ovarian Conservation: Eligible (Pre-menopausal, G1 Endometrioid <50% invasion, cN0, no Lynch; perform bilateral salpingectomy).');
+        } else if (eligibleOvarianSarcoma) {
+          ovHtml = `
+            <div class="p-3 rounded-xl bg-amber-50 border border-amber-300 text-amber-950 text-xs">
+              <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-info text-amber-600"></i>Sarcoma Ovarian Conservation Nuance (Grade C/D)</div>
+              <p class="mt-1 leading-relaxed">In young pre-menopausal women with early-stage uLMS or LG-ESS, ovarian conservation is not associated with worse overall survival, though in LG-ESS it increases recurrence risk (Grade C). Discuss at Sarcoma MDT.</p>
+            </div>`;
+          modSummaryLines.push('Ovarian Conservation (Sarcoma): Permissible in selected young early-stage uLMS/LG-ESS after counselling on recurrence risk.');
+        } else {
+          let reason = [];
+          if (histology !== 'endo_g1') reason.push('histology is not Grade 1 Endometrioid');
+          if (!isPresumedIA) reason.push('myometrial invasion ≥50% or extra-uterine spread');
+          if (nodes === 'bulky') reason.push('bulky nodes');
+          if (lynch) reason.push('known/suspected Lynch Syndrome (10–17% lifetime ovarian cancer risk)');
+          if (mol === 'p53abn') reason.push('p53abn profile');
+          ovHtml = `
+            <div class="p-3 rounded-xl bg-rose-50 border border-rose-300 text-rose-950 text-xs">
+              <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-xmark text-rose-600"></i>Ovarian Conservation: NOT RECOMMENDED (Grade D)</div>
+              <p class="mt-1 leading-relaxed">Bilateral salpingo-oophorectomy (BSO) is advised because ${reason.join(', ')}.</p>
+            </div>`;
+          modSummaryLines.push(`Ovarian Conservation: Not recommended (${reason.join(', ')}) — perform BSO.`);
+        }
+        modContainer.insertAdjacentHTML('beforeend', ovHtml);
+      }
+
+      // Fertility-Sparing Check
+      if (fertility) {
+        const eligibleFertility = ((histology === 'aeh' || histology === 'endo_g1') && extent === 'no_inv' && nodes === 'normal' && mol !== 'p53abn');
+        let fertHtml = '';
+        if (eligibleFertility) {
+          fertHtml = `
+            <div class="p-3 rounded-xl bg-teal-50 border border-teal-300 text-teal-950 text-xs">
+              <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-seedling text-teal-600"></i>Fertility-Sparing Management: ELIGIBLE CANDIDATE (Grade A/B)</div>
+              <p class="mt-1 leading-relaxed">
+                • Suitable for AEH or Stage IA Grade 1 Endometrioid EC <strong>without myometrial invasion</strong>.<br>
+                • <strong>Workup:</strong> Manage in specialist centre; expert pathology review, baseline MRI scan, MMR IHC/Lynch check, and fertility clinic referral (Grade A).<br>
+                • <strong>Regimen:</strong> Medroxyprogesterone acetate (MPA 400–600 mg/day) or Megestrol acetate (160–320 mg/day) and/or LNG-IUS for 6–12 months (+/- hysteroscopic resection &amp; weight loss/bariatric support if BMI &ge;40) (Grade B).<br>
+                • <strong>Surveillance:</strong> Endometrial biopsy + repeat imaging at 3-monthly intervals (3, 6, 12m). Hysterectomy + bilateral salpingectomy once childbearing complete or if progression (Grade B).
+              </p>
+            </div>`;
+          modSummaryLines.push('Fertility-Sparing Pathway: Candidate (AEH / Stage IA G1 without myometrial invasion). Requires central pathology review, MRI pelvis, fertility referral, LNG-IUS and/or oral progestin (MPA 400-600mg/d), and 3-monthly biopsy/MRI.');
+        } else {
+          fertHtml = `
+            <div class="p-3 rounded-xl bg-rose-50 border border-rose-300 text-rose-950 text-xs">
+              <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-ban text-rose-600"></i>Fertility-Sparing Management: CONTRAINDICATED (Grade A)</div>
+              <p class="mt-1 leading-relaxed">Conservative uterine-sparing therapy is strictly restricted to AEH or Stage IA Grade 1 endometrioid carcinoma with <strong>no myometrial invasion</strong>. Standard surgical hysterectomy is indicated.</p>
+            </div>`;
+          modSummaryLines.push('Fertility-Sparing Pathway: Not eligible (requires Stage IA G1 Endometrioid or AEH with NO myometrial invasion).');
+        }
+        modContainer.insertAdjacentHTML('beforeend', fertHtml);
+      }
+
+      // Medically Unfit / Frailty Check
+      if (unfit) {
+        let unfitHtml = `
+          <div class="p-3 rounded-xl bg-indigo-50 border border-indigo-300 text-indigo-950 text-xs">
+            <div class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-person-cane text-indigo-600"></i>Medically Unfit / High Frailty Pathway (BGCS p.56 &amp; p.60)</div>
+            <p class="mt-1 leading-relaxed">
+              • Involve Perioperative care of Older Person (POPS) team in MDT (Grade C).<br>
+              • <strong>Vaginal Hysterectomy:</strong> Consider if unfit for laparoscopic/abdominal surgery in low-grade early disease (Grade C).<br>
+              • <strong>Definitive Radiotherapy (Grade B):</strong> ${ (isHighGrade || isDeepOrAdvanced) ? 'Combined External Beam RT (EBRT) + Intracavitary Brachytherapy recommended for high-grade, deep myometrial invasion, or Stage II disease.' : 'Intracavitary Brachytherapy alone may be considered for low-grade Stage IA without deep invasion.' }<br>
+              • <strong>Endocrine Therapy (Grade B):</strong> LNG-IUS / oral progestin (to postpone surgery 3–6m for reversible medical reasons, or definitive +/- aromatase inhibitors if RT/surgery not an option).
+            </p>
+          </div>`;
+        modContainer.insertAdjacentHTML('beforeend', unfitHtml);
+        modSummaryLines.push('Medically Unfit/Frailty Options: Involve POPS team; consider vaginal hysterectomy, primary radiotherapy (EBRT+VBT if high grade/deep invasion/Stage II; brachytherapy alone if low grade IA), or LNG-IUS/progestin.');
+      }
+
+      // Build Pre-Op MDT Text Summary
+      const histLabels = {
+        endo_g1: 'Endometrioid Adenocarcinoma Grade 1',
+        endo_g2: 'Endometrioid Adenocarcinoma Grade 2',
+        endo_g3: 'Endometrioid Adenocarcinoma Grade 3 (High Grade)',
+        non_endo: 'Non-Endometrioid High-Risk Carcinoma (Serous/Clear Cell/Carcinosarcoma/Mixed)',
+        aeh: 'Atypical Endometrial Hyperplasia (AEH)',
+        sarcoma: 'Uterine Sarcoma'
+      };
+      const extentLabels = {
+        no_inv: 'No myometrial invasion (Stage IA confined to endometrium/polyp)',
+        ia_lt50: '<50% myometrial invasion (Presumed Stage IA)',
+        ib_ge50: '≥50% myometrial invasion (Presumed Stage IB)',
+        stage_ii: 'Cervical stromal invasion (Presumed Stage II)',
+        stage_iii_iv: 'Extra-uterine spread (Presumed Stage III/IV)'
+      };
+
+      const summaryLines = [
+        `BGCS 2022 PRE-OPERATIVE MDT TRIAGE SUMMARY`,
+        `• Biopsy Histology: ${histLabels[histology]} | Pre-op Molecular/IHC: ${mol.toUpperCase()}`,
+        `• Imaging Extent: ${extentLabels[extent]} | Nodes: ${nodes === 'normal' ? 'cN0 (Non-bulky)' : 'cN1/N2 (Bulky/Suspicious)'}`,
+        `• Surgical Location: ${locationTitle} (${locationGrade})`,
+        `• Nodal Strategy: ${nodeHeadline} (${nodeGrade})`,
+        `• Staging Imaging: ${imagingText}`,
+        `• Surgical Plan: ${surgeryText}`
+      ];
+      if (molSummaryNote) summaryLines.push(`• Molecular Note: ${molSummaryNote}`);
+      modSummaryLines.forEach(l => summaryLines.push(`• ${l}`));
+      if (histology !== 'sarcoma' && histology !== 'aeh') {
+        summaryLines.push(`• Lynch Screening: Ensure 4-panel MMR IHC (MLH1, MSH2, MSH6, PMS2) is performed on biopsy/hysterectomy (NICE DG42, Grade C).`);
+      }
+
+      document.getElementById('preop-summary-text').value = summaryLines.join('\n');
+    }
+
+    // -------------------------------------------------------------------------
+    // TAB 2: POST-OPERATIVE ESGO 2020 / BGCS 2022 RISK & ADJUVANT ENGINE
+    // -------------------------------------------------------------------------
+    function setPostopState(key, val) {
+      postopState[key] = val;
+      const groupMap = {
+        hist: 'postop-hist-group',
+        stage: 'postop-stage-group',
+        residual: 'postop-residual-group',
+        lvsi: 'postop-lvsi-group',
+        nodalStaged: 'postop-nodal-staged-group',
+        mol: 'postop-mol-group',
+        age: 'postop-age-group'
+      };
+      highlightPills(groupMap[key], val);
+
+      // Show/hide residual disease selector if Stage III or IVA
+      const isStage3or4A = ['IIIA', 'IIIB', 'IIIC1', 'IIIC2', 'IVA'].includes(postopState.stage);
+      const resCont = document.getElementById('postop-residual-container');
+      if (isStage3or4A) {
+        resCont.classList.remove('hidden');
+      } else {
+        resCont.classList.add('hidden');
+        postopState.residual = 'none';
+        highlightPills('postop-residual-group', 'none');
+      }
+
+      // If Stage IIIC1 or IIIC2 selected, automatically ensure nodalStaged is 'yes'
+      if (postopState.stage === 'IIIC1' || postopState.stage === 'IIIC2') {
+        postopState.nodalStaged = 'yes';
+        highlightPills('postop-nodal-staged-group', 'yes');
+      }
+
+      evaluatePostop();
+    }
+
+    /**
+     * Pure function computing ESGO 2020 / BGCS 2022 Table 5 Risk Group
+     * for any given molecular profile ('unknown', 'pole', 'mmrd', 'nsmp', 'p53abn')
+     */
+    function calculateTable5Risk(state, molOverride) {
+      const { hist, stage, residual, lvsi } = state;
+      const mol = molOverride || state.mol;
+
+      const isEndo = (hist === 'endo_low' || hist === 'endo_high');
+      const isLowGrade = (hist === 'endo_low');
+      const isHighGradeEndo = (hist === 'endo_high');
+      const isNonEndo = !isEndo; // serous, clear_cell, carcinosarcoma
+
+      const isStageI = (stage === 'IA_no_inv' || stage === 'IA_inv' || stage === 'IB');
+      const isStageIA = (stage === 'IA_no_inv' || stage === 'IA_inv');
+      const isMyoinvasive = (stage !== 'IA_no_inv');
+      const isStageI_II = (isStageI || stage === 'II');
+      const isStageIII_IVA = ['IIIA', 'IIIB', 'IIIC1', 'IIIC2', 'IVA'].includes(stage);
+
+      // 1. Metastatic (Stage IVB)
+      if (stage === 'IVB') {
+        return {
+          group: 'Metastatic',
+          basis: 'FIGO Stage IVB disease (distant / intra-abdominal metastasis) of any molecular or histological subtype (Table 5).'
+        };
+      }
+
+      // 2. Advanced (Stage III-IVA with residual disease)
+      if (isStageIII_IVA && residual === 'present') {
+        return {
+          group: 'Advanced',
+          basis: `FIGO Stage ${stage} with macroscopic residual disease present after surgery (Table 5).`
+        };
+      }
+
+      // 3. Molecular Known: POLEmut in Stage I-II (R0)
+      if (mol === 'pole' && isStageI_II) {
+        return {
+          group: 'Low',
+          basis: `Stage ${stage.replace('_no_inv', '').replace('_inv', '')} POLEmut endometrial carcinoma with no residual disease (Table 5).`
+        };
+      }
+
+      // 4. Molecular Known: p53abn
+      if (mol === 'p53abn') {
+        if (stage === 'IA_no_inv') {
+          return {
+            group: 'Intermediate',
+            basis: 'Stage IA p53abn and/or non-endometrioid carcinoma WITHOUT myometrial invasion (restricted to endometrium/polyp) (Table 5).'
+          };
+        } else {
+          // Any myoinvasive Stage I-IVA p53abn with no residual disease is High Risk
+          return {
+            group: 'High',
+            basis: `Stage ${stage.replace('_inv', '')} p53abn endometrial carcinoma WITH myometrial invasion and no residual disease (Table 5).`
+          };
+        }
+      }
+
+      // 5. Stage III-IVA with NO residual disease (Molecular Unknown, MMRd, NSMP, or Stage III-IVA POLEmut)
+      if (isStageIII_IVA && residual === 'none') {
+        return {
+          group: 'High',
+          basis: `FIGO Stage ${stage} endometrial carcinoma with complete macroscopic resection (no residual disease) (Table 5).`
+        };
+      }
+
+      // 6. Non-Endometrioid (Serous, Clear Cell, Carcinosarcoma, Undifferentiated, Mixed) in Stage I-II
+      if (isNonEndo) {
+        if (stage === 'IA_no_inv') {
+          return {
+            group: 'Intermediate',
+            basis: 'Stage IA non-endometrioid carcinoma WITHOUT myometrial invasion (confined to endometrium/polyp) (Table 5).'
+          };
+        } else {
+          return {
+            group: 'High',
+            basis: `Stage ${stage.replace('_inv', '')} non-endometrioid carcinoma WITH myometrial invasion and no residual disease (Table 5).`
+          };
+        }
+      }
+
+      // 7. Endometrioid Stage I-II (Molecular Unknown, MMRd, or NSMP)
+      if (stage === 'II') {
+        return {
+          group: 'High-Intermediate',
+          basis: `Stage II (${mol === 'unknown' ? 'molecular unknown' : mol.toUpperCase()}) endometrioid carcinoma (Table 5).`
+        };
+      }
+
+      // Stage I Endometrioid with Substantial LVSI -> High-Intermediate Risk regardless of grade or depth
+      if (isStageI && lvsi === 'substantial') {
+        return {
+          group: 'High-Intermediate',
+          basis: `Stage ${stage.replace('_no_inv', '').replace('_inv', '')} endometrioid carcinoma with SUBSTANTIAL LVSI (regardless of grade and depth of invasion) (Table 5).`
+        };
+      }
+
+      // Stage IB Endometrioid High-Grade (G3) -> High-Intermediate Risk regardless of LVSI
+      if (stage === 'IB' && isHighGradeEndo) {
+        return {
+          group: 'High-Intermediate',
+          basis: 'Stage IB high-grade (G3) endometrioid carcinoma (regardless of LVSI status) (Table 5).'
+        };
+      }
+
+      // Stage IB Endometrioid Low-Grade (G1/G2) with Negative/Focal LVSI -> Intermediate Risk
+      if (stage === 'IB' && isLowGrade && lvsi === 'neg_focal') {
+        return {
+          group: 'Intermediate',
+          basis: 'Stage IB low-grade (G1/G2) endometrioid carcinoma with LVSI negative or focal (Table 5).'
+        };
+      }
+
+      // Stage IA Endometrioid High-Grade (G3) with Negative/Focal LVSI -> Intermediate Risk
+      if (isStageIA && isHighGradeEndo && lvsi === 'neg_focal') {
+        return {
+          group: 'Intermediate',
+          basis: 'Stage IA high-grade (G3) endometrioid carcinoma with LVSI negative or focal (Table 5).'
+        };
+      }
+
+      // Stage IA Endometrioid Low-Grade (G1/G2) with Negative/Focal LVSI -> Low Risk
+      return {
+        group: 'Low',
+        basis: 'Stage IA low-grade (G1/G2) endometrioid carcinoma with LVSI negative or focal (Table 5).'
+      };
+    }
+
+    function evaluatePostop() {
+      const currentRes = calculateTable5Risk(postopState, postopState.mol);
+      const unknownRes = calculateTable5Risk(postopState, 'unknown');
+
+      // Style Hero Header based on Risk Group
+      const riskColors = {
+        'Low': { header: 'bg-emerald-700', badge: 'bg-emerald-50 text-emerald-800 border-emerald-300', short: 'LOW' },
+        'Intermediate': { header: 'bg-sky-700', badge: 'bg-sky-50 text-sky-800 border-sky-300', short: 'INT' },
+        'High-Intermediate': { header: 'bg-amber-600', badge: 'bg-amber-50 text-amber-900 border-amber-300', short: 'HIR' },
+        'High': { header: 'bg-rose-700', badge: 'bg-rose-50 text-rose-900 border-rose-300', short: 'HIGH' },
+        'Advanced': { header: 'bg-purple-800', badge: 'bg-purple-50 text-purple-900 border-purple-300', short: 'ADV' },
+        'Metastatic': { header: 'bg-slate-900', badge: 'bg-slate-100 text-slate-900 border-slate-400', short: 'MET' }
+      };
+
+      const theme = riskColors[currentRes.group];
+      document.getElementById('postop-risk-header').className = `px-5 py-4 text-white ${theme.header} flex items-center justify-between transition-colors`;
+      document.getElementById('postop-risk-title').textContent = `${currentRes.group.toUpperCase()} RISK`;
+      document.getElementById('postop-risk-basis').textContent = currentRes.basis;
+
+      // Populate What-If Molecular Comparator Matrix
+      const molOptions = [
+        { key: 'unknown', label: 'Unknown' },
+        { key: 'pole', label: 'POLEmut' },
+        { key: 'mmrd', label: 'MMRd' },
+        { key: 'nsmp', label: 'NSMP' },
+        { key: 'p53abn', label: 'p53abn' }
+      ];
+      const compGrid = document.getElementById('postop-comparator-grid');
+      compGrid.innerHTML = '';
+      molOptions.forEach(opt => {
+        const r = calculateTable5Risk(postopState, opt.key);
+        const cTheme = riskColors[r.group];
+        const isSelected = (postopState.mol === opt.key);
+        compGrid.insertAdjacentHTML('beforeend', `
+          <div onclick="setPostopState('mol', '${opt.key}')" class="cursor-pointer p-1.5 rounded-lg border text-[10px] transition ${cTheme.badge} ${isSelected ? 'ring-2 ring-slate-900 font-extrabold' : 'opacity-80 hover:opacity-100'}">
+            <div class="text-slate-600 font-semibold">${opt.label}</div>
+            <div class="font-extrabold mt-0.5">${cTheme.short}</div>
+          </div>
+        `);
+      });
+
+      // Molecular Shift Alert
+      const shiftAlert = document.getElementById('postop-shift-alert');
+      if (postopState.mol !== 'unknown' && currentRes.group !== unknownRes.group) {
+        shiftAlert.classList.remove('hidden');
+        if (currentRes.group === 'Low') {
+          shiftAlert.className = 'mt-2 text-[11px] font-semibold px-2.5 py-1.5 rounded-lg bg-emerald-100 text-emerald-900 border border-emerald-300';
+          shiftAlert.innerHTML = `<i class="fa-solid fa-arrow-trend-down mr-1"></i><strong>Molecular Downstaging:</strong> Shifted from <strong>${unknownRes.group} Risk</strong> (by morphology) down to <strong>Low Risk</strong> due to <code>POLEmut</code> status.`;
+        } else {
+          shiftAlert.className = 'mt-2 text-[11px] font-semibold px-2.5 py-1.5 rounded-lg bg-rose-100 text-rose-900 border border-rose-300';
+          shiftAlert.innerHTML = `<i class="fa-solid fa-arrow-trend-up mr-1"></i><strong>Molecular Upstaging:</strong> Shifted from <strong>${unknownRes.group} Risk</strong> (by morphology) up to <strong>${currentRes.group} Risk</strong> due to myoinvasive <code>p53abn</code> status.`;
+        }
+      } else {
+        shiftAlert.classList.add('hidden');
+      }
+
+      // -----------------------------------------------------------------------
+      // ADJUVANT RADIOTHERAPY LOGIC (BGCS Section 8.1 & Table 10)
+      // -----------------------------------------------------------------------
+      let rtGrade = 'Grade A';
+      let rtHeadline = '';
+      let rtDetails = '';
+      let rtBoxStyle = 'bg-slate-50 border-slate-200';
+
+      const { hist, stage, lvsi, nodalStaged, mol, age } = postopState;
+      const isLowGradeEndo = (hist === 'endo_low');
+
+      if (currentRes.group === 'Low') {
+        rtGrade = (mol === 'pole' && (stage !== 'IA_no_inv' && stage !== 'IA_inv' || !isLowGradeEndo || lvsi === 'substantial')) ? 'Grade C' : 'Grade A';
+        rtHeadline = 'No Adjuvant Radiotherapy Recommended';
+        rtDetails = (mol === 'pole')
+          ? 'Stage I–II POLEmut endometrial cancers have an excellent prognosis (5-yr RFS 97–100% in PORTEC-3); consider omitting all adjuvant radiotherapy (Grade C).'
+          : 'Multiple RCTs demonstrate no survival benefit for adjuvant radiotherapy in low-risk Stage IA G1/G2 endometrioid EC (Grade A).';
+        rtBoxStyle = 'bg-emerald-50/70 border-emerald-300';
+      } else if (currentRes.group === 'Intermediate') {
+        if (stage === 'IA_no_inv' && (mol === 'p53abn' || hist !== 'endo_low' && hist !== 'endo_high')) {
+          rtGrade = 'Grade D';
+          rtHeadline = 'Individualised: Consider Vaginal Brachytherapy (VBT) or Surveillance';
+          rtDetails = 'For p53abn or non-endometrioid carcinoma restricted to a polyp or without myometrial invasion (Stage IA no invasion), there are no RCT data. VBT or close surveillance with no additional treatment are both options (Grade D).';
+          rtBoxStyle = 'bg-sky-50/70 border-sky-300';
+        } else if (age === 'lt60') {
+          rtGrade = 'Grade A';
+          rtHeadline = 'Vaginal Vault Brachytherapy (VBT) OR Consider Omission (<60 yrs)';
+          rtDetails = 'VBT reduces vaginal recurrence (PORTEC-2) with minimal toxicity (Grade A). However, omission of VBT (surveillance) can be considered in patients aged <60 years as recurrence risk is lower and isolated vaginal relapse is salvageable (Grade A).';
+          rtBoxStyle = 'bg-sky-50/70 border-sky-300';
+        } else {
+          rtGrade = 'Grade A';
+          rtHeadline = 'Adjuvant Vaginal Vault Brachytherapy (VBT) Recommended';
+          rtDetails = 'VBT (typically 21 Gy in 3 fractions or 24 Gy in 4 fractions HDR to upper third of vagina) is recommended to reduce vaginal vault recurrence without the GI/urinary toxicity of EBRT (PORTEC-2, Grade A).';
+          rtBoxStyle = 'bg-sky-50/70 border-sky-300';
+        }
+      } else if (currentRes.group === 'High-Intermediate') {
+        if (nodalStaged === 'yes') {
+          // Surgical nodal staging performed (and node negative since Stage I/II)
+          if (lvsi === 'substantial' || (stage === 'II' && (hist === 'endo_high' || stage === 'IB'))) {
+            rtGrade = 'Grade A';
+            rtHeadline = 'Adjuvant Pelvic EBRT Recommended (IMRT/VMAT)';
+            rtDetails = 'Even with negative surgical nodal staging, adjuvant EBRT (45–50.4 Gy in 25–28# via IMRT, Grade B) is recommended when substantial LVSI is present or for Stage II with high grade (G3) or deep myometrial invasion (GOG-99 / GOG-249, Grade A).';
+            rtBoxStyle = 'bg-amber-50/80 border-amber-400';
+          } else {
+            rtGrade = 'Grade A';
+            rtHeadline = 'Consider Adjuvant Vaginal Brachytherapy (VBT) Alone';
+            rtDetails = 'Because surgical lymph node staging has confirmed node-negative status and there is NO substantial LVSI (e.g., Stage IB G3 LVSI-negative or low-grade Stage II), VBT alone can be considered (Grade A).';
+            rtBoxStyle = 'bg-sky-50/80 border-sky-300';
+          }
+        } else {
+          // Surgical nodal staging NOT performed
+          if (stage === 'II' && isLowGradeEndo && lvsi === 'neg_focal') {
+            rtGrade = 'Grade A/B';
+            rtHeadline = 'Adjuvant EBRT Recommended (or Consider VBT if <50% Invasion)';
+            rtDetails = 'When nodes are not surgically staged, EBRT is standard (Grade A). However, VBT alone can be considered for Stage II low-grade (G1/G2) endometrioid cancers without deep myometrial invasion and without substantial LVSI (Grade B).';
+            rtBoxStyle = 'bg-amber-50/80 border-amber-400';
+          } else {
+            rtGrade = 'Grade A';
+            rtHeadline = 'Adjuvant Pelvic EBRT Recommended (IMRT/VMAT)';
+            rtDetails = 'When surgical lymph node staging has NOT been performed in High-Intermediate Risk EC, adjuvant pelvic EBRT (45–50.4 Gy in 25–28# via IMRT/VMAT) is recommended to reduce pelvic and vaginal recurrence (Grade A).';
+            rtBoxStyle = 'bg-amber-50/80 border-amber-400';
+          }
+        }
+      } else if (currentRes.group === 'High') {
+        rtGrade = 'Grade A/B';
+        rtHeadline = 'Adjuvant Pelvic EBRT (with Combined/Sequential Chemotherapy)';
+        const extFieldNote = (stage === 'IIIC2')
+          ? ' Extended-field IMRT up to the renal vessels is indicated for para-aortic/high common iliac node involvement.'
+          : '';
+        rtDetails = `External beam radiotherapy (IMRT/VMAT technique, Grade B) combined with concurrent/adjuvant or sequential Carboplatin-Paclitaxel chemotherapy is recommended (PORTEC-3, Grade A).${extFieldNote} Note: Chemotherapy alone or with VBT may be an alternative option if systematic lymphadenectomy has been performed (GOG-258, Grade B).`;
+        rtBoxStyle = 'bg-rose-50/80 border-rose-300';
+      } else {
+        // Advanced or Metastatic
+        rtGrade = 'Grade B/D';
+        rtHeadline = 'Individualised / Palliative or Definitive RT Boost';
+        rtDetails = 'In Stage III–IVA with residual disease or Stage IVB, systemic therapy is primary; deliver integrated/sequential EBRT boost (55–65 Gy EQD2) or image-guided brachytherapy to sites of residual pelvic/nodal/vaginal disease, or palliative RT for bleeding/pain.';
+        rtBoxStyle = 'bg-purple-50 border-purple-300';
+      }
+
+      document.getElementById('postop-rt-grade').textContent = rtGrade;
+      document.getElementById('postop-rt-headline').textContent = rtHeadline;
+      document.getElementById('postop-rt-details').textContent = rtDetails;
+      document.getElementById('postop-rt-box').className = `p-3.5 rounded-xl border text-xs sm:text-sm space-y-1 ${rtBoxStyle}`;
+
+      // -----------------------------------------------------------------------
+      // ADJUVANT SYSTEMIC CHEMOTHERAPY LOGIC (BGCS Section 8.2, p.63–65)
+      // -----------------------------------------------------------------------
+      let chemoGrade = 'Grade A';
+      let chemoHeadline = '';
+      let chemoDetails = '';
+      let chemoBoxStyle = 'bg-slate-50 border-slate-200';
+
+      const isStageIII_IVA_R0 = (['IIIA', 'IIIB', 'IIIC1', 'IIIC2', 'IVA'].includes(stage) && postopState.residual === 'none');
+      const isMyoinvasiveStageI_II = (['IA_inv', 'IB', 'II'].includes(stage));
+      const isNonEndo = (hist === 'serous' || hist === 'clear_cell' || hist === 'carcinosarcoma');
+
+      if (currentRes.group === 'Advanced' || currentRes.group === 'Metastatic') {
+        chemoGrade = 'Grade A';
+        chemoHeadline = 'First-Line Systemic Carboplatin + Paclitaxel (or Endocrine/Clinical Trial)';
+        chemoDetails = 'Carboplatin (AUC 5–6) + Paclitaxel (175 mg/m² q21d for 6 cycles) is standard first-line therapy for advanced/metastatic EC of all subtypes (GOG-209, Grade A). Progestins/aromatase inhibitors are an alternative for low-grade ER/PR+ disease (Grade B).';
+        chemoBoxStyle = 'bg-purple-50 border-purple-300';
+      } else if (mol === 'pole') {
+        chemoGrade = 'Grade C';
+        chemoHeadline = 'Adjuvant Chemotherapy NOT Required (POLEmut)';
+        chemoDetails = 'Women with POLEmut endometrial cancer have an exceptional prognosis (5-yr RFS 100% with CTRT vs 97% with RT in PORTEC-3 molecular analysis) and do NOT require adjuvant chemotherapy (Grade C).';
+        chemoBoxStyle = 'bg-emerald-50/70 border-emerald-300';
+      } else if (mol !== 'unknown') {
+        // MOLECULAR SUBTYPING KNOWN (MMRd, NSMP, p53abn)
+        if (mol === 'p53abn' && stage !== 'IA_no_inv') {
+          chemoGrade = 'Grade C';
+          chemoHeadline = 'Adjuvant Chemotherapy RECOMMENDED (Myoinvasive p53abn)';
+          chemoDetails = 'In PORTEC-3 molecular analysis, p53abn EC had the poorest prognosis with RT alone (5-yr RFS 36%) but derived a major survival benefit from combined Carboplatin-Paclitaxel + RT (5-yr RFS 57%, HR 0.52). Recommended for all Stage I (myoinvasive)–IVA p53abn EC (Grade C).';
+          chemoBoxStyle = 'bg-rose-50/80 border-rose-300';
+        } else if (mol === 'nsmp' && isStageIII_IVA_R0) {
+          chemoGrade = 'Grade C';
+          chemoHeadline = 'Adjuvant Chemotherapy RECOMMENDED (Stage III/IVA NSMP)';
+          chemoDetails = 'Adjuvant platinum-taxane chemotherapy (concurrent cisplatin-RT followed by 4x carboplatin-paclitaxel, or sequential carboplatin-paclitaxel + RT) is recommended for Stage III/IVA NSMP endometrial cancer (Grade C).';
+          chemoBoxStyle = 'bg-rose-50/80 border-rose-300';
+        } else if (mol === 'mmrd' && isStageIII_IVA_R0 && !isNonEndo) {
+          chemoGrade = 'Grade C';
+          chemoHeadline = 'Discuss Adjuvant Chemotherapy as an Option (Stage III/IVA MMRd)';
+          chemoDetails = 'In PORTEC-3 retrospective molecular analysis, MMRd EC did not show a clear RFS advantage from adding chemotherapy to RT (HR 1.29). Adjuvant chemotherapy can be discussed as a potential option in Stage III/IVA MMRd endometrioid EC, or consider molecularly stratified clinical trials (RAINBO) (Grade C).';
+          chemoBoxStyle = 'bg-amber-50/80 border-amber-400';
+        } else if ((mol === 'nsmp' || mol === 'mmrd') && isNonEndo && (isMyoinvasiveStageI_II || isStageIII_IVA_R0)) {
+          chemoGrade = 'Grade C';
+          chemoHeadline = 'Discuss Adjuvant Chemotherapy as an Option (Myoinvasive Non-Endometrioid NSMP/MMRd)';
+          chemoDetails = 'For women with myoinvasive Stage I–II (or III/IVA) non-endometrioid high-grade subtypes (serous, clear cell, carcinosarcoma) that are NSMP or MMRd, adjuvant chemotherapy can be discussed as a treatment option (Grade C).';
+          chemoBoxStyle = 'bg-amber-50/80 border-amber-400';
+        } else if (currentRes.group === 'High-Intermediate' && (lvsi === 'substantial' || nodalStaged === 'no') && (stage === 'IB' || stage === 'II') && hist === 'endo_high') {
+          chemoGrade = 'Grade B';
+          chemoHeadline = 'Consider / Discuss Adjuvant Chemotherapy (Unstaged or Substantial LVSI)';
+          chemoDetails = 'Adjuvant chemotherapy can be considered in High-Intermediate Risk Stage IB/II G3 endometrioid EC when substantial LVSI is present or surgical nodal staging was not performed (Grade B).';
+          chemoBoxStyle = 'bg-amber-50/80 border-amber-300';
+        } else {
+          chemoGrade = 'Grade A/C';
+          chemoHeadline = 'No Adjuvant Chemotherapy Indicated';
+          chemoDetails = 'Adjuvant cytotoxic chemotherapy is not indicated for this stage and molecular subgroup outside of clinical trials.';
+          chemoBoxStyle = 'bg-emerald-50/70 border-emerald-300';
+        }
+      } else {
+        // MOLECULAR SUBTYPING UNKNOWN (Morphological rules, BGCS p.63)
+        if (isStageIII_IVA_R0) {
+          chemoGrade = 'Grade A';
+          chemoHeadline = 'Adjuvant Chemotherapy RECOMMENDED (Stage III/IVA)';
+          chemoDetails = 'Recommended for all Stage III–IVA endometrial carcinomas (5-yr OS 78.5% vs 68.5% in PORTEC-3 Stage III). Use concurrent cisplatin-RT + 4x Carboplatin-Paclitaxel OR sequential Carboplatin-Paclitaxel + RT (Grade A).';
+          chemoBoxStyle = 'bg-rose-50/80 border-rose-300';
+        } else if (isMyoinvasiveStageI_II && hist === 'serous') {
+          chemoGrade = 'Grade B';
+          chemoHeadline = 'Adjuvant Chemotherapy RECOMMENDED (Myoinvasive Stage I–II Serous)';
+          chemoDetails = 'Serous cancers derived major OS benefit from combined CTRT in PORTEC-3 (5-yr OS 71.4% vs 52.8%, HR 0.48). Adjuvant Carboplatin-Paclitaxel with RT is recommended (Grade B).';
+          chemoBoxStyle = 'bg-rose-50/80 border-rose-300';
+        } else if (isMyoinvasiveStageI_II && (hist === 'clear_cell' || hist === 'carcinosarcoma')) {
+          chemoGrade = 'Grade C';
+          chemoHeadline = 'Adjuvant Chemotherapy RECOMMENDED (Myoinvasive Clear Cell / Carcinosarcoma)';
+          chemoDetails = 'Recommended for myoinvasive Stage I–II Clear Cell, Undifferentiated carcinoma, or Carcinosarcoma due to high distant relapse risk (Grade C).';
+          chemoBoxStyle = 'bg-rose-50/80 border-rose-300';
+        } else if ((stage === 'IB' || stage === 'II') && hist === 'endo_high' && (nodalStaged === 'no' || lvsi === 'substantial')) {
+          chemoGrade = 'Grade B';
+          chemoHeadline = 'Discuss Adjuvant Chemotherapy as a Potential Option';
+          chemoDetails = 'In Stage IB or II Grade 3 endometrioid carcinoma where surgical lymph node staging was not performed or substantial LVSI is present, adjuvant chemotherapy can be discussed as an option (Grade B).';
+          chemoBoxStyle = 'bg-amber-50/80 border-amber-400';
+        } else {
+          chemoGrade = 'Grade A';
+          chemoHeadline = 'No Adjuvant Chemotherapy Indicated';
+          chemoDetails = 'Adjuvant cytotoxic chemotherapy is not recommended for Low, Intermediate, or node-negative LVSI-negative Stage I–II endometrioid carcinoma outside clinical trials.';
+          chemoBoxStyle = 'bg-emerald-50/70 border-emerald-300';
+        }
+      }
+
+      document.getElementById('postop-chemo-grade').textContent = chemoGrade;
+      document.getElementById('postop-chemo-headline').textContent = chemoHeadline;
+      document.getElementById('postop-chemo-details').textContent = chemoDetails;
+      document.getElementById('postop-chemo-box').className = `p-3.5 rounded-xl border text-xs sm:text-sm space-y-1 ${chemoBoxStyle}`;
+
+      // -----------------------------------------------------------------------
+      // STRATIFIED FOLLOW-UP PATHWAY (BGCS Table 13)
+      // -----------------------------------------------------------------------
+      let fuText = '';
+      if (currentRes.group === 'Low') {
+        fuText = 'Offer Patient-Led Follow-Up (PLFU) from completion of primary treatment following a Holistic Needs Assessment (HNA) at 3 months (<10% risk of recurrence). If patient declines PLFU, offer clinic or telephone FU for max 2 years (Table 13).';
+      } else if (currentRes.group === 'Intermediate') {
+        fuText = 'Offer Patient-Led Follow-Up (PLFU) from end of treatment (once any VBT side effects have settled) OR after 2 years of clinic/telephone follow-up. Advise vaginal dilator therapy & psychosexual support if receiving VBT (Grade D).';
+      } else if (currentRes.group === 'High-Intermediate' || currentRes.group === 'High') {
+        fuText = 'Clinic-based or Telephone Follow-Up for 5 years (most recurrences occur within first 24 months). Can offer transition to Patient-Led Follow-Up (PLFU) after 2 years from end of treatment as relapse risk drops to <7% (Table 13). Routine surveillance imaging/CA125 is not indicated (Grade D).';
+      } else {
+        fuText = 'Individualised oncology clinic & symptom-led follow-up with early integration of specialist palliative and supportive care services (Grade D).';
+      }
+      document.getElementById('postop-fu-text').textContent = fuText;
+
+      // Build Post-Op MDT Text Summary
+      const histNames = {
+        endo_low: 'Endometrioid Low-Grade (G1/G2)',
+        endo_high: 'Endometrioid High-Grade (G3)',
+        serous: 'Serous Adenocarcinoma',
+        clear_cell: 'Clear Cell Carcinoma',
+        carcinosarcoma: 'Carcinosarcoma / Undifferentiated / Mixed'
+      };
+      const postopLines = [
+        `BGCS 2022 / ESGO 2020 POST-OPERATIVE MDT SUMMARY`,
+        `• Final Histology: ${histNames[hist]} | FIGO 2018 Stage: ${stage.replace('_no_inv', ' (No myoinvasion)').replace('_inv', ' (<50% myoinvasion)')}${['IIIA','IIIB','IIIC1','IIIC2','IVA'].includes(stage) ? (postopState.residual === 'none' ? ' (R0 No residual)' : ' (Residual disease)') : ''}`,
+        `• LVSI: ${lvsi === 'substantial' ? 'Substantial / Extensive' : 'Negative or Focal'} | Nodal Staging: ${nodalStaged === 'yes' ? 'Performed' : 'Not performed'} | Molecular: ${mol.toUpperCase()}`,
+        `• ESGO/BGCS Risk Group: ${currentRes.group.toUpperCase()} RISK (${currentRes.basis})`,
+        `• Adjuvant Radiotherapy: ${rtHeadline} (${rtGrade})`,
+        `• Adjuvant Chemotherapy: ${chemoHeadline} (${chemoGrade})`,
+        `• Follow-Up Pathway: ${fuText}`
+      ];
+      document.getElementById('postop-summary-text').value = postopLines.join('\n');
+    }
+
+    // -------------------------------------------------------------------------
+    // TAB 3: NICE DG42 LYNCH SYNDROME & UTERINE SARCOMA LOGIC
+    // -------------------------------------------------------------------------
+    function setLynchState(key, val) {
+      lynchState[key] = val;
+      if (key === 'ihc') {
+        highlightPills('lynch-ihc-group', val);
+        const methCont = document.getElementById('lynch-meth-container');
+        if (val === 'mlh1') {
+          methCont.classList.remove('hidden');
+        } else {
+          methCont.classList.add('hidden');
+        }
+      } else if (key === 'meth') {
+        highlightPills('lynch-meth-group', val);
+      }
+      evaluateLynch();
+    }
+
+    function evaluateLynch() {
+      const { ihc, meth } = lynchState;
+      const box = document.getElementById('lynch-output-box');
+      const title = document.getElementById('lynch-output-title');
+      const desc = document.getElementById('lynch-output-desc');
+
+      if (ihc === 'intact') {
+        box.className = 'p-4 rounded-2xl border-2 bg-emerald-50 border-emerald-500 text-emerald-950 space-y-2';
+        title.textContent = 'No Further Lynch Tumour Testing Required (MMR Proficient)';
+        desc.textContent = 'All four MMR proteins (MLH1, MSH2, MSH6, PMS2) are intact. Lynch syndrome is unlikely. However, if the patient has a strong family history of colorectal/endometrial/ovarian cancer or young age at diagnosis, consider Clinical Genetics referral.';
+      } else if (ihc === 'msh2_msh6_pms2') {
+        box.className = 'p-4 rounded-2xl border-2 bg-rose-50 border-rose-500 text-rose-950 space-y-2';
+        title.textContent = 'Refer for Germline Lynch Syndrome Genetic Testing (Table 3)';
+        desc.textContent = 'Abnormal IHC showing loss of MSH2, MSH6, or isolated PMS2 expression strongly suggests Lynch Syndrome. Do NOT perform MLH1 promoter hypermethylation testing — offer germline DNA testing and refer to Clinical Genetics for cascade counselling.';
+      } else if (ihc === 'mlh1') {
+        if (meth === 'positive') {
+          box.className = 'p-4 rounded-2xl border-2 bg-sky-50 border-sky-500 text-sky-950 space-y-2';
+          title.textContent = 'Likely Sporadic MMRd Endometrial Cancer (Hypermethylated)';
+          desc.textContent = 'MLH1 promoter hypermethylation is present, indicating somatic epigenetic silencing rather than germline Lynch syndrome. Germline testing is not routinely required unless there is a strong family history warranting Clinical Genetics review. Note: Tumour remains MMRd and eligible for PD-1/PD-L1 immunotherapy if recurrent.';
+        } else {
+          box.className = 'p-4 rounded-2xl border-2 bg-rose-50 border-rose-500 text-rose-950 space-y-2';
+          title.textContent = 'Confirm Lynch Syndrome by Germline Genetic Testing (Table 3)';
+          desc.textContent = 'Loss of MLH1 (or MLH1/PMS2) with ABSENT MLH1 promoter hypermethylation requires germline DNA testing for Lynch syndrome and referral to Clinical Genetics.';
+        }
+      }
+    }
+
+    function setSarcomaState(type) {
+      sarcomaType = type;
+      highlightPills('sarcoma-type-group', type);
+      evaluateSarcoma();
+    }
+
+    function evaluateSarcoma() {
+      const container = document.getElementById('sarcoma-output-card');
+      const data = {
+        ulms: {
+          title: 'Uterine Leiomyosarcoma (uLMS) — BGCS Section 12.1',
+          surgery: 'Extrafascial Total Hysterectomy +/- Bilateral Salpingectomy (Grade D). Oophorectomy in young pre-menopausal women is NOT mandatory (2% ovarian metastasis rate; no OS impact, Grade D). Routine pelvic LND is NOT recommended (Grade D). Avoid morcellation (3-fold recurrence increase).',
+          adjuvant: 'Early Stage (I–II): Observation is standard of care (Grade B). Routine adjuvant RT (EORTC 55874) and adjuvant chemotherapy (GOG-277) do NOT improve survival (Grade B). Adjuvant RT only for selected high-risk cases (e.g., positive excision margins, Grade B). Stage III–IV R0: Adjuvant chemotherapy can be considered (Grade C).',
+          advanced: 'First-line single-agent Doxorubicin (Grade B) OR Gemcitabine + Docetaxel (Grade C). Second-line: Trabectedin (ORR ~59.6%, Grade C). Low-volume indolent ER/PR+ uLMS: Consider aromatase inhibitors (letrozole/anastrozole, Grade D). Olaratumab or Bevacizumab combinations are NOT recommended (Grade B).'
+        },
+        lg_ess: {
+          title: 'Low-Grade Endometrial Stromal Sarcoma (LG-ESS) — BGCS Section 12.2',
+          surgery: 'Total Hysterectomy + Bilateral Salpingo-Oophorectomy (Grade C). No role for systematic lymphadenectomy (Grade C). In pre-menopausal women, ovarian conservation does not worsen OS but increases recurrence risk (Grade C).',
+          adjuvant: 'Stage I: No adjuvant treatment recommended (Grade D). Stage II–IV resected: Adjuvant endocrine therapy (MPA or Megestrol acetate) may be considered. CONTRAINDICATION: Post-operative HRT and Tamoxifen/SERMs are strictly contraindicated due to agonist activity (Grade D).',
+          advanced: 'Surgical cytoreduction/metastasectomy if resectable. First-line systemic therapy is anti-oestrogen therapy: Medroxyprogesterone acetate, Megestrol acetate, Aromatase Inhibitors, or GnRH analogues (Grade C/D).'
+        },
+        hg_ess: {
+          title: 'High-Grade ESS (HG-ESS) & Undifferentiated Sarcoma (UES) — BGCS Section 12.2',
+          surgery: 'Total Hysterectomy + Bilateral Salpingo-Oophorectomy (Grade C). Routine lymphadenectomy is not indicated for staging.',
+          adjuvant: 'Despite high recurrence risk, there is no clear evidence that adjuvant chemotherapy or radiotherapy improves overall survival in completely resected Stage I–II HG-ESS or UES.',
+          advanced: 'Systemic palliative chemotherapy using soft-tissue sarcoma regimens as per uLMS (Doxorubicin or Gemcitabine + Docetaxel, Grade B) alongside specialist Sarcoma MDT and clinical trial enrolment.'
+        },
+        adenosarcoma: {
+          title: 'Uterine Adenosarcoma (+/- Sarcomatous Overgrowth) — BGCS Section 12.3',
+          surgery: 'Total Hysterectomy + Bilateral Salpingo-Oophorectomy (Grade D). Routine lymphadenectomy is not recommended (Grade C). Note: Sarcomatous overgrowth (>25% high-grade component) carries a markedly worse prognosis (2-yr OS 20% vs 100%).',
+          adjuvant: 'The role of adjuvant radiotherapy, chemotherapy, or endocrine therapy in early-stage adenosarcoma is unclear and cannot be routinely recommended (Grade D).',
+          advanced: 'Consider secondary cytoreduction if resectable. Without sarcomatous overgrowth: consider endocrine therapy (as per LG-ESS). With sarcomatous overgrowth: consider systemic chemotherapy (as per uLMS) and clinical trials (Grade D).'
+        }
+      };
+
+      const info = data[sarcomaType];
+      container.innerHTML = `
+        <div class="p-4 rounded-xl bg-rose-50/70 border border-rose-200 space-y-2.5 text-xs">
+          <div class="font-extrabold text-sm text-rose-950">${info.title}</div>
+          <div>
+            <span class="font-bold uppercase tracking-wider text-rose-800 block">Primary Surgery &amp; Nodal Rules:</span>
+            <p class="text-slate-700 leading-relaxed mt-0.5">${info.surgery}</p>
+          </div>
+          <div>
+            <span class="font-bold uppercase tracking-wider text-rose-800 block">Adjuvant Therapy &amp; Contraindications:</span>
+            <p class="text-slate-700 leading-relaxed mt-0.5">${info.adjuvant}</p>
+          </div>
+          <div>
+            <span class="font-bold uppercase tracking-wider text-rose-800 block">Advanced / Recurrent Management:</span>
+            <p class="text-slate-700 leading-relaxed mt-0.5">${info.advanced}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // -------------------------------------------------------------------------
+    // UTILITIES: COPY TO CLIPBOARD & RESET
+    // -------------------------------------------------------------------------
+    function copySummary(textareaId, btnId) {
+      const textarea = document.getElementById(textareaId);
+      const btn = document.getElementById(btnId);
+      if (!textarea) return;
+
+      textarea.select();
+      textarea.setSelectionRange(0, 99999);
+      try {
+        document.execCommand('copy');
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = `<i class="fa-solid fa-check"></i><span>Copied to Clipboard!</span>`;
+        btn.classList.replace('bg-teal-600', 'bg-emerald-600');
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+          btn.classList.replace('bg-emerald-600', 'bg-teal-600');
+        }, 1800);
+      } catch (err) {
+        console.error('Copy failed', err);
+      }
+      window.getSelection().removeAllRanges();
+    }
+
+    function resetAllState() {
+      preopState = { ...defaultPreopState };
+      postopState = { ...defaultPostopState };
+      lynchState = { ...defaultLynchState };
+      sarcomaType = 'ulms';
+
+      highlightPills('preop-histology-group', preopState.histology);
+      highlightPills('preop-extent-group', preopState.extent);
+      highlightPills('preop-nodes-group', preopState.nodes);
+      highlightPills('preop-mol-group', preopState.mol);
+      document.getElementById('mod-ovarian').checked = false;
+      document.getElementById('mod-fertility').checked = false;
+      document.getElementById('mod-unfit').checked = false;
+      document.getElementById('mod-lynch').checked = false;
+
+      highlightPills('postop-hist-group', postopState.hist);
+      highlightPills('postop-stage-group', postopState.stage);
+      highlightPills('postop-residual-group', postopState.residual);
+      highlightPills('postop-lvsi-group', postopState.lvsi);
+      highlightPills('postop-nodal-staged-group', postopState.nodalStaged);
+      highlightPills('postop-mol-group', postopState.mol);
+      highlightPills('postop-age-group', postopState.age);
+      document.getElementById('postop-residual-container').classList.add('hidden');
+
+      highlightPills('lynch-ihc-group', lynchState.ihc);
+      highlightPills('lynch-meth-group', lynchState.meth);
+      document.getElementById('lynch-meth-container').classList.add('hidden');
+      highlightPills('sarcoma-type-group', sarcomaType);
+
+      evaluatePreop();
+      evaluatePostop();
+      evaluateLynch();
+      evaluateSarcoma();
+    }
+
+    // Initialize all calculators on load
+    window.onload = function () {
+      evaluatePreop();
+      evaluatePostop();
+      evaluateLynch();
+      evaluateSarcoma();
+    };
+  </script>
+
+</body></html>
